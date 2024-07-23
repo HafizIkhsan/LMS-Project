@@ -15,7 +15,11 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding: 0px 32px;
+}
+
+.header h1 {
+  align-self: center;
 }
 
 ul {
@@ -92,13 +96,36 @@ a.profile p {
 /* Main */
 
 .main {
-  display: flex;
-
   padding: 0px 32px;
 }
 
 div.background {
-  background-color: #d7d7d7;
-  opacity: 13%;
-  height: 100%;
+  border-radius: 32px;
+  background: rgb(215, 215, 215, 13%);
+  height: 100vh;
+  padding: 24px;
+}
+
+div.background h1 {
+  margin: 0;
+  color: black;
+}
+
+.container {
+  padding: 24px 0px;
+}
+
+.main-left {
+  width: 80%;
+  height: 100vh;
+}
+
+.main-right {
+  width: 20%;
+  height: 100vh;
+}
+
+.pengumuman {
+  padding: 24px 16px;
+  background: red;
 }
