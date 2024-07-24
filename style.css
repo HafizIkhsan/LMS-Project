@@ -4,6 +4,7 @@
 body {
   font-family: "Plus Jakarta Sans";
   font-size: 1rem;
+  margin: 0;
 }
 
 a {
@@ -100,10 +101,9 @@ a.profile p {
 }
 
 div.background {
-  border-radius: 32px;
+  border-radius: 32px 32px 0 0;
   background: rgb(215, 215, 215, 13%);
-  height: 100vh;
-  padding: 24px;
+  padding: 24px 24px 0 24px;
 }
 
 div.background h1 {
@@ -112,20 +112,65 @@ div.background h1 {
 }
 
 .container {
-  padding: 24px 0px;
+  padding: 16px 0px;
 }
+
+/* Left Side */
 
 .main-left {
   width: 80%;
   height: 100vh;
+  padding-right: 16px;
 }
 
+/* Announcement */
+.pengumuman {
+  padding: 16px;
+  border-radius: 16px;
+  background: #ff2a2a;
+  color: white;
+}
+
+/* Status */
+.status {
+  margin-top: 16px;
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.status ul {
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.status li {
+  text-align: center;
+  font: 400 12px Poppins;
+}
+
+.status li:nth-child(1),
+.status li:nth-child(2) {
+  text-align: left;
+}
+
+.status li b {
+  font: 600 14px Poppins;
+  text-align: center;
+}
+
+.status li:nth-child(13) {
+  margin-right: 24px;
+}
+
+.line {
+  border-left: 1.5px solid #c7c7c7;
+  height: 39px;
+}
+
+/* Right Side */
 .main-right {
   width: 20%;
   height: 100vh;
-}
-
-.pengumuman {
-  padding: 24px 16px;
-  background: red;
 }
