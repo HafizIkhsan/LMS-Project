@@ -177,7 +177,7 @@ div.background h1 {
 }
 
 .class {
-  max-width: 30%;
+  min-width: 28%;
   border-radius: 16px;
   background: white;
   box-shadow: 0px 4px 4px 1px rgb(70, 98, 173, 44%);
@@ -188,7 +188,7 @@ div.background h1 {
 }
 
 .active {
-  max-width: 40%;
+  min-width: 40%;
 }
 
 .schedule,
@@ -213,9 +213,11 @@ div.background h1 {
   display: flex;
   justify-content: space-between;
 }
+
 .profile-dosen {
   display: flex;
   align-items: center;
+  margin-right: 16px;
 }
 
 .profile-dosen img {
@@ -229,6 +231,11 @@ div.background h1 {
   background: #ff3636;
   align-self: center;
   color: white;
+  display: none;
+}
+
+.active .berlangsung {
+  display: block;
 }
 
 /* Right Side */
