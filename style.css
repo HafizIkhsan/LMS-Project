@@ -1,15 +1,22 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+html,
 body {
   font-family: "Plus Jakarta Sans";
   font-size: 1rem;
   margin: 0;
+  height: 100%;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
   color: #343434;
+}
+
+p {
+  margin: 0;
 }
 
 /* HEADER */
@@ -96,12 +103,15 @@ a.profile p {
 
 .main {
   padding: 0px 32px;
+  min-height: 100vh;
 }
 
 div.background {
   border-radius: 32px 32px 0 0;
   background: rgb(215, 215, 215, 13%);
   padding: 24px 24px 0 24px;
+  height: 100%;
+  min-height: 100vh;
 }
 
 div.background h1 {
@@ -116,7 +126,7 @@ div.background h1 {
 /* Left Side */
 
 .main-left {
-  width: 80%;
+  width: 70%;
   font: 400 12px Poppins;
   height: 100vh;
   padding-right: 16px;
@@ -246,11 +256,32 @@ div.background h1 {
 }
 
 .tugas {
-  max-width: 40%;
+  max-width: 37%;
   padding: 16px;
   background: white;
   border-radius: 16px;
 }
+
+.tasks li {
+  background: rgb(215, 215, 215, 13%);
+  width: 100%;
+  border-radius: 16px;
+  padding: 0px 24px 0px 0px;
+}
+
+.tasks a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-marker {
+  min-height: 64px;
+  width: 16px;
+  margin-right: 16px;
+  border-radius: 16px 0px 0px 16px;
+}
+
 /* Right Side */
 .main-right {
   width: 20%;
