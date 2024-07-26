@@ -28,7 +28,7 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 32px;
+  padding: 16px 32px;
 }
 
 .header h1 {
@@ -131,7 +131,7 @@ div.background h1 {
 /* Left Side */
 
 .main-left {
-  width: 70%;
+  width: 75%;
   font: 400 12px Poppins;
   height: 100vh;
   padding-right: 16px;
@@ -290,7 +290,7 @@ div.background h1 {
 
 /* Right Side */
 .main-right {
-  width: 30%;
+  width: 25%;
   height: 100vh;
 }
 
@@ -325,14 +325,37 @@ div.background h1 {
 
 .day {
   font: 300 12px Poppins;
-  padding: 8px;
+  margin-bottom: 12px;
 }
 
 .dates {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  gap: 16px 0px;
+  justify-items: center;
 }
 
 .date {
   padding: 5px;
+  font: 300 12px Poppins;
+}
+
+.date.inactive {
+  color: #a5a5a5;
+}
+
+.date.active {
+  background: #4662ad;
+  box-shadow: none;
+  color: white;
+  border-radius: 16px;
+}
+
+.date.weekend,
+.date.holiday {
+  color: red;
+}
+
+.event p {
+  font: 400 12px Poppins;
 }
