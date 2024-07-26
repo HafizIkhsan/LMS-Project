@@ -15,15 +15,20 @@ a {
   color: #343434;
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+ul {
   margin: 0;
+  padding: 0;
 }
 
 /* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 32px;
+  padding: 24px 32px;
 }
 
 .header h1 {
@@ -267,6 +272,7 @@ div.background h1 {
   width: 100%;
   border-radius: 16px;
   padding: 0px 24px 0px 0px;
+  margin: 8px 0px;
 }
 
 .tasks a {
@@ -284,6 +290,49 @@ div.background h1 {
 
 /* Right Side */
 .main-right {
-  width: 20%;
+  width: 30%;
   height: 100vh;
+}
+
+/* Calendar */
+.calendar {
+  background: white;
+  max-width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.month {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.month button {
+  background: none;
+  border: none;
+}
+
+.days ul {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.day:nth-child(1) {
+  color: red;
+}
+
+.day {
+  font: 300 12px Poppins;
+  padding: 8px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+  padding: 5px;
 }
