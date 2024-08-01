@@ -8,6 +8,7 @@ body {
   margin: 0;
   height: 100%;
   min-height: 100vh;
+  font: 400 12px Poppins;
 }
 
 a {
@@ -19,6 +20,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 ul {
   margin: 0;
   padding: 0;
@@ -132,7 +134,6 @@ div.background h1 {
 
 .main-left {
   width: 75%;
-  font: 400 12px Poppins;
   height: 100vh;
   padding-right: 16px;
 }
@@ -396,4 +397,32 @@ div.background h1 {
 
 .event p {
   font: 400 12px Poppins;
+}
+
+/* Zoom */
+.zoom {
+  max-width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: white;
+  margin-top: 16px;
+}
+
+.zoom p {
+  font: 400 10px Poppins;
+}
+
+#reminder {
+  display: flex;
+  width: 100%;
+  border-radius: 16px;
+  justify-content: center;
+  padding: 12px 0px;
+  border: none;
+  background: #fff731;
+}
+
+#reminder p {
+  margin-right: 8px;
+  font: 600 12px Poppins;
 }
