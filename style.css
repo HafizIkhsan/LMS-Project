@@ -50,7 +50,7 @@ ul.menu {
 ul.menu li {
   margin: 0px 20px;
   padding: 8px 32px;
-  border-radius: 24px;
+  border-radius: 16px;
 }
 
 ul.menu a {
@@ -70,10 +70,10 @@ ul.profile-section {
   align-items: center;
 }
 
-ul.profile-section #notification {
+#notification {
   margin-right: 14px;
   background-color: #fafafa;
-  border-radius: 32px;
+  border-radius: 16px;
   width: 56px;
   height: 56px;
   display: flex;
@@ -81,11 +81,11 @@ ul.profile-section #notification {
   justify-content: center;
 }
 
-ul.profile-section #notification div {
+#notification div {
   width: 40px;
   height: 40px;
   background-color: white;
-  border-radius: 24px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +95,7 @@ a.profile {
   display: flex;
   padding: 4px;
   border: 2px solid black;
-  border-radius: 32px;
+  border-radius: 16px;
   align-items: center;
   text-decoration: none;
   border-color: #a5a5a5;
@@ -287,7 +287,7 @@ div.background h1 {
 }
 
 .task-marker {
-  min-height: 64px;
+  min-height: 56px;
   width: 16px;
   margin-right: 16px;
   border-radius: 16px 0px 0px 16px;
@@ -417,7 +417,7 @@ div.background h1 {
   width: 100%;
   border-radius: 16px;
   justify-content: center;
-  padding: 12px 0px;
+  padding: 10px 0px;
   border: none;
   background: #fff731;
 }
