@@ -25,6 +25,11 @@ ul {
   padding: 0;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -102,11 +107,10 @@ ul.profile-section {
 #profile {
   display: flex;
   padding: 4px;
-  border: 2px solid black;
-  border-radius: 16px;
+  border: 2px solid #eaeaea;
+  border-radius: 24px;
   align-items: center;
   text-decoration: none;
-  border-color: #eaeaea;
   background: white;
   font: 400 12px Poppins;
 }
@@ -114,6 +118,33 @@ ul.profile-section {
 #profile:hover {
   box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
   cursor: pointer;
+}
+
+#dropdown {
+  margin-top: 8px;
+  background: white;
+  border: 2px solid #eaeaea;
+  border-radius: 16px;
+  position: absolute;
+  width: 18%;
+  padding: 8px 0px;
+}
+
+.dropdown-menu button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font: 300 12px Poppins;
+  padding: 8px 16px;
+}
+
+.dropdown-menu button:hover {
+  background: #eaeaea;
+  cursor: pointer;
+}
+
+.dropdown-menu button img {
+  margin-right: 16px;
 }
 
 /* Main */
@@ -280,9 +311,12 @@ div.background h1 {
   height: min-content;
 }
 
+.tasks ul {
+  display: block;
+}
+
 .tasks li {
   background: rgb(215, 215, 215, 13%);
-  width: 100%;
   border-radius: 16px;
   padding: 0px 24px 0px 0px;
   margin: 8px 0px;
@@ -317,7 +351,11 @@ div.background h1 {
   border-radius: 16px;
 }
 
-.material {
+ul.material-list {
+  display: block;
+}
+
+li.material {
   background: rgb(215, 215, 215, 13%);
   border-radius: 16px;
   padding: 16px;
@@ -438,5 +476,5 @@ div.background h1 {
 .tugas,
 .materi,
 .zoom {
-  height: 34vh;
+  height: 30vh;
 }

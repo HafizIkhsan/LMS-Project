@@ -31,15 +31,31 @@
         <li>
           <button id="profile">
             <img src="assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 8px 8px 8px 4px; border-radius: 24px" />
-            <div style="padding: 8px 8px; margin-right: 8px; align-items: start">
+            <div style="padding: 8px 8px; margin-right: 8px">
               <p style="margin: 0"><b>Muhammad Hafiz Ikhsan</b></p>
-              <p style="display: flex">202243502085</p>
+              <p style="text-align: start">202243502085</p>
             </div>
             <img src="assets/Icon/Light/Down 2.svg" alt="dropdown" style="margin-right: 10px" />
           </button>
-          <div class="dropdown-menu" id="dropdown">
-            <li></li>
-            <li></li>
+          <div class="dropdown-content" id="dropdown">
+            <div class="dropdown-menu">
+              <button>
+                <img src="assets/Icon/Light/User.svg" alt="" />
+                <p>Profil</p>
+              </button>
+            </div>
+            <div class="dropdown-menu">
+              <button>
+                <img src="assets/Icon/Light/Settings.svg" alt="" />
+                <p>Pengaturan</p>
+              </button>
+            </div>
+            <div class="dropdown-menu">
+              <button>
+                <img src="assets/Icon/Light/Logout.svg" alt="" />
+                <p style="color: #ff3636">Keluar</p>
+              </button>
+            </div>
           </div>
         </li>
       </ul>
@@ -191,7 +207,7 @@
             </div>
             <div class="bottom">
               <div class="tugas">
-                <h2 style="margin: 0; margin-bottom: 8px">Tugas</h2>
+                <h3 style="margin: 0; margin-bottom: 16px">Tugas</h3>
                 <div class="tasks">
                   <ul style="padding: 0">
                     <li>
@@ -206,10 +222,6 @@
                         </div>
                       </a>
                     </li>
-                  </ul>
-                </div>
-                <div class="tasks">
-                  <ul style="padding: 0">
                     <li>
                       <a href="#">
                         <div class="task-marker" style="background: #4eff31"></div>
@@ -222,10 +234,6 @@
                         </div>
                       </a>
                     </li>
-                  </ul>
-                </div>
-                <div class="tasks">
-                  <ul style="padding: 0">
                     <li>
                       <a href="#">
                         <div class="task-marker" style="background: #9b51e0"></div>
@@ -246,8 +254,8 @@
                   <h3>Materi hari ini</h3>
                   <p>Pertemuan 13</p>
                 </div>
-                <div class="material-list">
-                  <div class="material">
+                <ul class="material-list">
+                  <li class="material">
                     <p>Aristektur dan Organisasi Komputer *)</p>
                     <div style="display: flex; justify-content: space-between">
                       <h3>Struktur Fungsi CPU</h3>
@@ -257,8 +265,8 @@
                       </div>
                     </div>
                     <p>25 Juni 2024</p>
-                  </div>
-                  <div class="material">
+                  </li>
+                  <li class="material">
                     <p>Aljabar Linier dan Matrik *)</p>
                     <div style="display: flex; justify-content: space-between">
                       <h3>Kombinasi Linier, Basis dan Dimensi</h3>
@@ -268,8 +276,8 @@
                       </div>
                     </div>
                     <p>25 Juni 2024</p>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -302,7 +310,7 @@
             <div class="zoom">
               <h3 style="margin-bottom: 16px">Kelas Online</h3>
               <h2>Fisika Listrik Magnet</h2>
-              <p style="margin: 8px 0px 16px 0px">Kelas pengganti pertemuan ke 13 pada hari Jum'at, kita akan membahas materi mengenai Arus dan Tegangan Bolak Balik</p>
+              <p style="margin: 0px 0px 16px 0px">Kelas pengganti pertemuan ke 13 pada hari Jum'at, kita akan membahas materi mengenai Arus dan Tegangan Bolak Balik</p>
               <div class="profile-dosen" style="margin-bottom: 24px">
                 <img src="assets/Profile-Pict/Putri.svg" alt="" />
                 <div class="data">
