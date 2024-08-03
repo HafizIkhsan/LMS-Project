@@ -106,19 +106,23 @@ ul.profile-section {
 }
 
 #profile {
-  display: flex;
-  padding: 4px;
   border: 2px solid #eaeaea;
   border-radius: 24px;
-  align-items: center;
   text-decoration: none;
   background: white;
-  font: 400 12px Poppins;
 }
 
-#profile:hover {
+#profile:hover,
+#profile.active {
   box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
   cursor: pointer;
+}
+
+#profile button {
+  padding: 4px;
+  display: flex;
+  font: 400 12px Poppins;
+  align-items: center;
 }
 
 #dropdown {
