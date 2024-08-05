@@ -127,7 +127,7 @@ ul.profile-section {
 
 #profile button img:nth-child(3) {
   transition: 250ms ease-out;
-  transition: rotate(0);
+  transform: rotate(0);
 }
 
 #profile.active button img:nth-child(3) {
@@ -484,13 +484,13 @@ li.material {
 }
 
 #reminder {
-  display: flex;
   width: 100%;
   border-radius: 16px;
   justify-content: center;
   padding: 10px 0px;
   border: none;
   background: #fff731;
+  border: 2px solid #fff731;
 }
 
 #reminder p {
@@ -504,8 +504,42 @@ li.material {
 
 #reminder.active {
   background: white;
-  color: #ff2a2a;
   border: 2px solid #fff731;
+}
+
+.reminder {
+  overflow: hidden;
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.reminder div.content {
+  position: absolute;
+  display: block;
+  padding: 0px;
+}
+
+.reminder div {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+}
+
+@keyframes active {
+  0% {
+    top: 0px;
+    color: red;
+  }
+  50% {
+    top: -10px;
+    color: red;
+  }
+  100% {
+    top: -20px;
+    color: red;
+  }
 }
 
 .tugas,
