@@ -1,6 +1,6 @@
-import updateCalendar from "./calendar.js";
-import profile from "./profile-dropdown.js";
-import button from "./zoomwait.js";
+import updateCalendar from "./dashboard/calendar.js";
+import profile from "./dashboard/profile-dropdown.js";
+import button from "./dashboard/zoomwait.js";
 
 updateCalendar();
 
