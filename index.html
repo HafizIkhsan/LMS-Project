@@ -13,14 +13,17 @@
         <div>
           <form action="./html/dashboard.html">
             <label for="npm">NIDN/NPM/Username</label>
-            <input type="text" id="npm" name="npm" placeholder="NIDN/NPM/Username" />
+            <input class="input-field" type="text" id="npm" name="npm" placeholder="NIDN/NPM/Username anda" />
             <label for="pass">Password</label>
-            <input type="password" id="pass" name="pass" placeholder="Masukkan password anda" />
+            <div class="input-pass">
+              <input class="input-field" type="password" id="pass" name="pass" placeholder="Masukkan password anda" />
+              <span class="password-toggle-icon"><img src="./assets/Icon/Light/Hide.svg" alt="" /></span>
+            </div>
             <input type="submit" value="Masuk" />
           </form>
         </div>
       </div>
     </section>
-    <script src="./js/script.js"></script>
+    <script src="./js/login/script.js" type="module"></script>
   </body>
 </html>

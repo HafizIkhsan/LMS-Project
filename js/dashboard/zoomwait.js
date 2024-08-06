@@ -1,8 +1,8 @@
 const button = document.querySelector('#reminder');
 
-button.addEventListener('click', function (e) {
+button.addEventListener('click', function () {
   const text = button.querySelector('.reminder div.content');
-  text.style.animation= 'active 250ms ease-in forwards';
+  text.style.animation = 'active 250ms ease-in forwards';
   button.classList.add('active');
 });
 

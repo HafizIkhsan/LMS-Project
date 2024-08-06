@@ -31,15 +31,25 @@ h1 {
   text-align: center;
 }
 
-input[type="text"],
-input[type="password"] {
+.input-field {
   width: 100%;
   padding: 16px;
   margin: 12px 0px;
-  border-radius: 8px;
   border: 1px solid #717171;
+  border-radius: 8px;
   box-sizing: border-box;
   display: inline-block;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #16369e;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  transform: translate(-40px, 25px);
+  cursor: pointer;
 }
 
 input[type="submit"] {

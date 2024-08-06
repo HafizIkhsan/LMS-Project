@@ -1,7 +1,7 @@
 const profile  = document.querySelector('#profile');
 const button = profile.querySelector('button');
 
-button.addEventListener('click',function(e){
+button.addEventListener('click',function(){
     const dropdown = profile.nextElementSibling;
     if(dropdown){
         profile.classList.toggle('active')

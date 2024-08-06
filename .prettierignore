@@ -1,4 +1,9 @@
-js/script.js
-js/calendar.js
-js/profile-dropdown.js
-js/zoomwait.js
+# Login
+js/login/script.js
+js/login/showpass.js
+
+# Dashboard
+js/dashboard/script.js
+js/dashboard/calendar.js
+js/dashboard/profile-dropdown.js
+js/dashboard/zoomwait.js
