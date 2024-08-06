@@ -31,7 +31,8 @@ h1 {
   text-align: center;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 16px;
   margin: 12px 0px;
@@ -39,4 +40,20 @@ input[type="text"] {
   border: 1px solid #717171;
   box-sizing: border-box;
   display: inline-block;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 16px;
+  color: white;
+  background: #0c2577;
+  border: none;
+  border-radius: 8px;
+  font: 400 12px Plus Jakarta Sans;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+input[type="submit"]:hover {
+  background: #16369e;
 }
