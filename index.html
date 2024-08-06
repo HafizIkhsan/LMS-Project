@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LMS</title>
+    <link rel="stylesheet" href="./css/login/style.css" />
   </head>
   <body>
     <section id="isi">
       <h1>SELAMAT DATANG.</h1>
-      <button><a href="html/dashboard.html">Masuk</a></button>
+      <div class="login">
+        <form action="/html/dashboard.html">
+          <label for="npm">NIDN/NPM/Username</label><br />
+          <input type="text" id="npm" name="npm" placeholder="NIDN/NPM/Username" /><br />
+          <label for="pass">Password</label><br />
+          <input type="text" id="pass" name="pass" placeholder="Masukkan password anda" /><br /><br />
+          <input type="submit" value="Masuk" />
+        </form>
+      </div>
     </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>
