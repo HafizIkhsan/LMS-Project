@@ -13,3 +13,30 @@ a {
   text-decoration: none;
   color: #343434;
 }
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#inside {
+  width: 30%;
+}
+
+h1 {
+  font: 800 32px Plus Jakarta Sans;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 16px;
+  margin: 12px 0px;
+  border-radius: 8px;
+  border: 1px solid #717171;
+  box-sizing: border-box;
+  display: inline-block;
+}
