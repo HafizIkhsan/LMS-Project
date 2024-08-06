@@ -140,7 +140,8 @@ ul.profile-section {
   border: 2px solid #eaeaea;
   border-radius: 16px;
   position: absolute;
-  width: 18%;
+  width: 100%;
+  box-sizing: border-box;
   padding: 8px 0px;
 }
 
