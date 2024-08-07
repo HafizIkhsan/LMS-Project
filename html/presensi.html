@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presensi</title>
+    <link rel="stylesheet" href="../css/presensi/style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <h1>LMS UNIVERSITAS</h1>
+      <ul class="menu">
+        <li>
+          <a href="./dashboard.html"><img src="../assets/Icon/Light/Category 2.svg" alt="" style="margin-right: 12px; width: 20px" />Dashboard</a>
+        </li>
+        <li class="active-menu">
+          <a href="./presensi.html"><img src="../assets/Icon/Filled/Calendar.svg" alt="" style="margin-right: 12px; width: 20px" />Presensi</a>
+        </li>
+        <li>
+          <a href="#mataKuliah"><img src="../assets/Icon/Light/Case.svg" alt="" style="margin-right: 12px; width: 20px" />Mata Kuliah</a>
+        </li>
+      </ul>
+      <ul class="profile-section">
+        <li>
+          <a href="#notification" id="notification">
+            <div>
+              <img src="../assets/Icon/Light/Bell.svg" alt="notification" style="width: 24px; height: 24px" />
+            </div>
+          </a>
+        </li>
+        <li style="position: relative">
+          <div id="profile">
+            <button>
+              <img src="../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 8px 8px 8px 4px; border-radius: 24px" />
+              <div style="padding: 8px 8px; margin-right: 8px">
+                <p style="margin: 0"><b>Muhammad Hafiz Ikhsan</b></p>
+                <p style="text-align: start">20224350xxxx</p>
+              </div>
+              <img src="../assets/Icon/Light/Down 2.svg" alt="dropdown" style="margin-right: 10px" />
+            </button>
+          </div>
+
+          <div class="dropdown-content" id="dropdown">
+            <div class="dropdown-menu">
+              <button>
+                <img src="../assets/Icon/Light/User.svg" alt="" />
+                <p>Profil</p>
+              </button>
+            </div>
+            <div class="dropdown-menu">
+              <button>
+                <img src="../assets/Icon/Light/Settings.svg" alt="" />
+                <p>Pengaturan</p>
+              </button>
+            </div>
+            <div class="dropdown-menu">
+              <button>
+                <img src="../assets/Icon/Light/Logout.svg" alt="" />
+                <p style="color: #ff3636">Keluar</p>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="main">
+      <div class="background">
+        <h1 style="font: 600 36px Poppins">Presensi</h1>
+        <div class="container">
+          <table style="width: 100%">
+            <tr id="attribute">
+              <th>No</th>
+              <th>Kode Mata Kuliah</th>
+              <th>Mata Kuliah</th>
+              <th>Kelas</th>
+              <th>Hari</th>
+              <th>Waktu</th>
+              <th>Ruangan</th>
+              <th>Pertemuan</th>
+              <th>Presensi</th>
+            </tr>
+            <tr class="tuple">
+              <th style="width: 2%">1</th>
+              <th>KB43H435</th>
+              <th>Sistem Basis Data *)</th>
+              <th>R4X</th>
+              <th>Senin</th>
+              <th>14:10 - 15:50</th>
+              <th>R.6.1-7</th>
+              <th style="width: 12%; text-align: start; padding: 8px">
+                <div class="presentase" style="display: flex; justify-content: space-between; padding: 2px 4px">
+                  <p>13/16</p>
+                  <p>80%</p>
+                </div>
+                <div class="bar-pertemuan">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+              <th style="width: 8%; text-align: end; padding: 8px">
+                80%
+
+                <div class="bar-presensi">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+            </tr>
+            <tr class="tuple">
+              <th style="width: 2%">1</th>
+              <th>KB43H435</th>
+              <th>Sistem Basis Data *)</th>
+              <th>R4X</th>
+              <th>Senin</th>
+              <th>14:10 - 15:50</th>
+              <th>R.6.1-7</th>
+              <th style="width: 12%; text-align: start; padding: 8px">
+                <div class="presentase" style="display: flex; justify-content: space-between; padding: 2px 4px">
+                  <p>13/16</p>
+                  <p>80%</p>
+                </div>
+                <div class="bar-pertemuan">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+              <th style="width: 8%; text-align: end; padding: 8px">
+                80%
+
+                <div class="bar-presensi">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+            </tr>
+            <tr class="tuple">
+              <th style="width: 2%">1</th>
+              <th>KB43H435</th>
+              <th>Sistem Basis Data *)</th>
+              <th>R4X</th>
+              <th>Senin</th>
+              <th>14:10 - 15:50</th>
+              <th>R.6.1-7</th>
+              <th style="width: 12%; text-align: start; padding: 8px">
+                <div class="presentase" style="display: flex; justify-content: space-between; padding: 2px 4px">
+                  <p>13/16</p>
+                  <p>80%</p>
+                </div>
+                <div class="bar-pertemuan">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+              <th style="width: 8%; text-align: end; padding: 8px">
+                80%
+
+                <div class="bar-presensi">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+            </tr>
+            <tr class="tuple">
+              <th style="width: 2%">1</th>
+              <th>KB43H435</th>
+              <th>Sistem Basis Data *)</th>
+              <th>R4X</th>
+              <th>Senin</th>
+              <th>14:10 - 15:50</th>
+              <th>R.6.1-7</th>
+              <th style="width: 12%; text-align: start; padding: 8px">
+                <div class="presentase" style="display: flex; justify-content: space-between; padding: 2px 4px">
+                  <p>13/16</p>
+                  <p>80%</p>
+                </div>
+                <div class="bar-pertemuan">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+              <th style="width: 8%; text-align: end; padding: 8px">
+                80%
+
+                <div class="bar-presensi">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+            </tr>
+            <tr class="tuple">
+              <th style="width: 2%">1</th>
+              <th>KB43H435</th>
+              <th>Sistem Basis Data *)</th>
+              <th>R4X</th>
+              <th>Senin</th>
+              <th>14:10 - 15:50</th>
+              <th>R.6.1-7</th>
+              <th style="width: 12%; text-align: start; padding: 8px">
+                <div class="presentase" style="display: flex; justify-content: space-between; padding: 2px 4px">
+                  <p>13/16</p>
+                  <p>80%</p>
+                </div>
+                <div class="bar-pertemuan">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+              <th style="width: 8%; text-align: end; padding: 8px">
+                80%
+
+                <div class="bar-presensi">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+            </tr>
+            <tr class="tuple">
+              <th style="width: 2%">1</th>
+              <th>KB43H435</th>
+              <th>Sistem Basis Data *)</th>
+              <th>R4X</th>
+              <th>Senin</th>
+              <th>14:10 - 15:50</th>
+              <th>R.6.1-7</th>
+              <th style="width: 12%; text-align: start; padding: 8px">
+                <div class="presentase" style="display: flex; justify-content: space-between; padding: 2px 4px">
+                  <p>13/16</p>
+                  <p>80%</p>
+                </div>
+                <div class="bar-pertemuan">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+              <th style="width: 8%; text-align: end; padding: 8px">
+                80%
+
+                <div class="bar-presensi">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+            </tr>
+            <tr class="tuple">
+              <th style="width: 2%">1</th>
+              <th>KB43H435</th>
+              <th>Sistem Basis Data *)</th>
+              <th>R4X</th>
+              <th>Senin</th>
+              <th>14:10 - 15:50</th>
+              <th>R.6.1-7</th>
+              <th style="width: 12%; text-align: start; padding: 8px">
+                <div class="presentase" style="display: flex; justify-content: space-between; padding: 2px 4px">
+                  <p>13/16</p>
+                  <p>80%</p>
+                </div>
+                <div class="bar-pertemuan">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+              <th style="width: 8%; text-align: end; padding: 8px">
+                80%
+
+                <div class="bar-presensi">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+            </tr>
+            <tr class="tuple">
+              <th style="width: 2%">1</th>
+              <th>KB43H435</th>
+              <th>Sistem Basis Data *)</th>
+              <th>R4X</th>
+              <th>Senin</th>
+              <th>14:10 - 15:50</th>
+              <th>R.6.1-7</th>
+              <th style="width: 12%; text-align: start; padding: 8px">
+                <div class="presentase" style="display: flex; justify-content: space-between; padding: 2px 4px">
+                  <p>13/16</p>
+                  <p>80%</p>
+                </div>
+                <div class="bar-pertemuan">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+              <th style="width: 8%; text-align: end; padding: 8px">
+                80%
+
+                <div class="bar-presensi">
+                  <div class="isi-bar"></div>
+                </div>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script src="../js/presensi/script.js" type="module"></script>
+  </body>
+</html>
