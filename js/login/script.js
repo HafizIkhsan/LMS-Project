@@ -1,1 +1,1 @@
-import password from './showpass.js';
+import {password, submit} from './showpass.js';

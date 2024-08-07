@@ -52,6 +52,10 @@ h1 {
   cursor: pointer;
 }
 
+.password-toggle-icon img {
+  display: none;
+}
+
 input[type="submit"] {
   width: 100%;
   padding: 16px;
