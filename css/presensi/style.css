@@ -142,6 +142,7 @@ ul.profile-section {
   width: 100%;
   box-sizing: border-box;
   padding: 8px 0px;
+  z-index: 999;
 }
 
 .dropdown-content {
@@ -189,13 +190,9 @@ div.background h1 {
   color: black;
 }
 
-.container {
-  padding: 16px 0px;
-}
-
 /* container */
 .container {
-  padding: 16px;
+  position: relative;
 }
 
 /* table */
@@ -207,7 +204,8 @@ table {
 #attribute th {
   font-size: 14px;
   font-weight: 600;
-  padding: 16px 0px;
+  padding: 16px;
+  text-align: start;
 }
 
 /* tuple */
@@ -220,7 +218,7 @@ table {
   background: #f2f2f2;
 }
 
-.tuple th {
+.tuple td {
   font-size: 12px;
   font-weight: 400;
   padding: 20px 16px;
@@ -248,4 +246,26 @@ table {
 }
 .bar-presensi .isi-bar {
   background: rgb(43, 193, 43);
+}
+
+/* POP-UP */
+#pop-up {
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 24px 32px;
+  top: 25%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  /* display: none; */
+}
+
+#pop-up p {
+  display: inline;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 16px;
 }
