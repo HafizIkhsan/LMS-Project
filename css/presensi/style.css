@@ -293,15 +293,17 @@ table {
 .tuple-popup td {
   font-size: 12px;
   font-weight: 400;
-  border: 2px solid #eaeaea;
-  border-width: 0px 2px 0px 0px;
+  border: 1px solid #eaeaea;
+  border-width: 1px 1px 0px 0px;
   text-align: start;
   padding: 8px;
 }
 
 .tuple-popup th:nth-child(5),
 .tuple-popup td:nth-child(5) {
-  border-width: 0px;
+  border-width: 1px 0px 0px 0px;
+  width: 8%;
+  text-align: center;
 }
 
 .tuple-popup th:nth-child(1),
@@ -311,7 +313,7 @@ table {
 }
 
 .tuple-popup td table td {
-  border-width: 0px 2px 0px 0px;
+  border-width: 0px 1px 0px 0px;
   padding: 0px;
   text-align: center;
 }
