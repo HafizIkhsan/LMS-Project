@@ -262,7 +262,7 @@ table {
   position: absolute;
   background: white;
   width: 70%;
-  padding: 24px 32px;
+  padding: 32px 32px;
   top: 50%;
   left: 50%;
   box-sizing: border-box;
@@ -287,6 +287,7 @@ table {
   font-weight: 600;
   background: #0c2577;
   color: white;
+  border: 0px;
 }
 
 .tuple-popup th,
@@ -299,21 +300,17 @@ table {
   padding: 8px;
 }
 
-.tuple-popup th:nth-child(5),
-.tuple-popup td:nth-child(5) {
-  border-width: 1px 0px 0px 0px;
-  width: 8%;
-  text-align: center;
+.tuple-popup td {
+  background-color: #fafafa;
 }
 
-.tuple-popup th:nth-child(1),
-.tuple-popup td:nth-child(1) {
-  width: 5%;
+.presensi td {
+  width: 16px;
   text-align: center;
-}
-
-.tuple-popup td table td {
   border-width: 0px 1px 0px 0px;
-  padding: 0px;
+}
+
+.presensi div {
+  width: 16px;
   text-align: center;
 }
