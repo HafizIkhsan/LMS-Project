@@ -175,6 +175,7 @@ ul.profile-section {
 /* Main */
 .main {
   padding: 0px 32px;
+  min-height: 80vh;
 }
 
 div.background {
