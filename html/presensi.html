@@ -275,96 +275,95 @@
         </div>
       </div>
     </section>
-    <div id="background-popup">
-      <div id="pop-up">
-        <h2 style="text-align: center; margin-bottom: 32px">PRESENSI KEHADIRAN</h2>
-        <h2 style="position: absolute; top: 10%; left: 95%; cursor: pointer">x</h2>
-        <div class="desc">
-          <div id="matkul">
-            <p>Nama Matakuliah:</p>
-            <p class="nm-matkul">Sistem Basis Data *)</p>
-          </div>
-          <div id="kd-kls">
-            <p>Kode Matkul & Kelas:</p>
-            <p class="kd-mk">KB43H435 & R4X</p>
-          </div>
+    <div id="background-popup"></div>
+    <div id="pop-up">
+      <h2 style="text-align: center; margin-bottom: 32px">PRESENSI KEHADIRAN</h2>
+      <h2 id="close" style="position: absolute; top: 10%; left: 95%; cursor: pointer">x</h2>
+      <div class="desc">
+        <div id="matkul">
+          <p>Nama Matakuliah:</p>
+          <p class="nm-matkul">Sistem Basis Data *)</p>
         </div>
-        <div class="desc">
-          <div id="time">
-            <p>Jadwal & Ruangan:</p>
-            <p class="jdwl">14:10 - 15:50 & R.6.1.7</p>
-          </div>
-          <div id="lecturer">
-            <p>Dosen:</p>
-            <p class="dsn">Muhammad Sobari M.Kom</p>
-          </div>
+        <div id="kd-kls">
+          <p>Kode Matkul & Kelas:</p>
+          <p class="kd-mk">KB43H435 & R4X</p>
         </div>
-        <table style="width: 100%; margin-top: 32px">
-          <tr class="tuple-popup" id="attribute-popup">
-            <th style="border-radius: 8px 0px 0px 0px; width: 5%; text-align: center">No</th>
-            <th>Nim</th>
-            <th>Nama</th>
-            <th style="text-align: center">Presensi</th>
-            <th style="border-radius: 0px 16px 0px 0px; border-width: 1px 0px 0px 0px; width: 8%; text-align: center">Persen</th>
-          </tr>
-          <tr class="tuple-popup">
-            <td style="width: 5%; text-align: center"></td>
-            <td></td>
-            <td></td>
-            <td style="padding: 0px">
-              <table style="width: 100%; text-align: center">
-                <tr class="presensi">
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>9</td>
-                  <td>10</td>
-                  <td>11</td>
-                  <td>12</td>
-                  <td>13</td>
-                  <td>14</td>
-                  <td>15</td>
-                  <td>16</td>
-                </tr>
-              </table>
-            </td>
-            <td style="border-width: 1px 0px 0px 0px"></td>
-          </tr>
-          <tr class="tuple-popup">
-            <td style="border-radius: 0px 0px 0px 8px; width: 5%; text-align: center">1</td>
-            <td>20224350xxxx</td>
-            <td>Muhammad Hafiz Ikhsan</td>
-            <td style="padding: 0px">
-              <table style="width: 100%; text-align: center">
-                <tr class="presensi">
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Blm-Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Blm-Absen.svg" alt="" style="width: 100%" /></td>
-                  <td><img src="../assets/Icon/Curved/Blm-Absen.svg" alt="" style="width: 100%" /></td>
-                </tr>
-              </table>
-            </td>
-            <td style="border-radius: 0px 0px 8px 0px; border-width: 1px 0px 0px 0px; text-align: center"><b>80%</b></td>
-          </tr>
-        </table>
       </div>
+      <div class="desc">
+        <div id="time">
+          <p>Jadwal & Ruangan:</p>
+          <p class="jdwl">14:10 - 15:50 & R.6.1.7</p>
+        </div>
+        <div id="lecturer">
+          <p>Dosen:</p>
+          <p class="dsn">Muhammad Sobari M.Kom</p>
+        </div>
+      </div>
+      <table style="width: 100%; margin-top: 32px">
+        <tr class="tuple-popup" id="attribute-popup">
+          <th style="border-radius: 8px 0px 0px 0px; width: 5%; text-align: center">No</th>
+          <th>Nim</th>
+          <th>Nama</th>
+          <th style="text-align: center">Presensi</th>
+          <th style="border-radius: 0px 16px 0px 0px; border-width: 1px 0px 0px 0px; width: 8%; text-align: center">Persen</th>
+        </tr>
+        <tr class="tuple-popup">
+          <td style="width: 5%; text-align: center"></td>
+          <td></td>
+          <td></td>
+          <td style="padding: 0px">
+            <table style="width: 100%; text-align: center">
+              <tr class="presensi">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+              </tr>
+            </table>
+          </td>
+          <td style="border-width: 1px 0px 0px 0px"></td>
+        </tr>
+        <tr class="tuple-popup">
+          <td style="border-radius: 0px 0px 0px 8px; width: 5%; text-align: center">1</td>
+          <td>20224350xxxx</td>
+          <td>Muhammad Hafiz Ikhsan</td>
+          <td style="padding: 0px">
+            <table style="width: 100%; text-align: center">
+              <tr class="presensi">
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Blm-Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Blm-Absen.svg" alt="" style="width: 100%" /></td>
+                <td><img src="../assets/Icon/Curved/Blm-Absen.svg" alt="" style="width: 100%" /></td>
+              </tr>
+            </table>
+          </td>
+          <td style="border-radius: 0px 0px 8px 0px; border-width: 1px 0px 0px 0px; text-align: center"><b>80%</b></td>
+        </tr>
+      </table>
     </div>
 
     <script src="../js/presensi/script.js" type="module"></script>

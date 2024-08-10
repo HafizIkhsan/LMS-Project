@@ -253,8 +253,8 @@ table {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
   cursor: pointer;
+  display: none;
 }
 
 /* POP-UP */
@@ -269,7 +269,8 @@ table {
   border-radius: 16px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  /* display: none; */
+  cursor: default;
+  display: none;
 }
 
 #pop-up p {
