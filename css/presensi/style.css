@@ -142,7 +142,7 @@ ul.profile-section {
   width: 100%;
   box-sizing: border-box;
   padding: 8px 0px;
-  z-index: 999;
+  z-index: 0;
 }
 
 .dropdown-content {
@@ -154,7 +154,7 @@ ul.profile-section {
   box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
 }
 
-.dropdown-menu button {
+.dropdown-menu a button {
   display: flex;
   align-items: center;
   width: 100%;
@@ -162,7 +162,7 @@ ul.profile-section {
   padding: 8px 16px;
 }
 
-.dropdown-menu button:hover {
+.dropdown-menu:hover {
   background: #eaeaea;
   cursor: pointer;
 }

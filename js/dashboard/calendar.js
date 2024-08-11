@@ -36,7 +36,7 @@ const updateCalendar = () => {
 
     //weekend
     if (days % 7 == 0) {
-      datesHTML += `<div class = 'date weekend${activeClass}'>${i}</div>`;
+      datesHTML += `<div class = 'date weekend ${activeClass}'>${i}</div>`;
     } else {
       datesHTML += `<div class = 'date ${activeClass}'>${i}</div>`;
     }

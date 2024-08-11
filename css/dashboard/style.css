@@ -153,7 +153,7 @@ ul.profile-section {
   box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
 }
 
-.dropdown-menu button {
+.dropdown-menu a button {
   display: flex;
   align-items: center;
   width: 100%;
@@ -161,7 +161,7 @@ ul.profile-section {
   padding: 8px 16px;
 }
 
-.dropdown-menu button:hover {
+.dropdown-menu:hover {
   background: #eaeaea;
   cursor: pointer;
 }
@@ -455,6 +455,13 @@ li.material {
   border-radius: 16px;
 }
 
+.date.weekend.active {
+  background: red;
+  box-shadow: none;
+  color: white;
+  border-radius: 16px;
+}
+
 .date.weekend,
 .date.holiday {
   color: red;
@@ -519,6 +526,7 @@ li.material {
   display: flex;
   justify-content: center;
   height: 20px;
+  align-items: center;
 }
 
 @keyframes active {
