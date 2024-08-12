@@ -298,7 +298,8 @@ div.background h1 {
 }
 
 .profile-dosen img {
-  margin-right: 16px;
+  margin-right: 8px;
+  width: 32px;
 }
 
 .berlangsung {
