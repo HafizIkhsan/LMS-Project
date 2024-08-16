@@ -169,3 +169,80 @@ ul.profile-section {
 .dropdown-menu button img {
   margin-right: 16px;
 }
+
+/* MAIN */
+/* Main */
+.main {
+  padding: 0px 32px;
+  height: 80vh;
+}
+
+div.background {
+  border-radius: 32px 32px 0 0;
+  background: rgb(215, 215, 215, 13%);
+  padding: 24px;
+  position: static;
+  height: 100%;
+}
+
+div.background h1 {
+  margin: 0;
+  color: black;
+}
+
+/* container */
+.container {
+  margin-top: 16px;
+}
+
+/* Subject */
+.subject {
+  width: 18%;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgb(211, 211, 211, 32%);
+  border-radius: 16px;
+  height: 30vh;
+  position: relative;
+  padding: 16px;
+}
+
+.top {
+  background-color: #4662ad;
+  padding: 16px;
+  color: white;
+  border-radius: 16px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0px;
+  left: 0px;
+}
+
+.dateTime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateTime p {
+  font: 200 10px Plus Jakarta Sans;
+}
+
+.subject .top h1 {
+  margin-top: 16px;
+  width: 70%;
+  font: 600 24px Plus Jakarta Sans;
+  color: white;
+}
+
+.lecture {
+  position: relative;
+  top: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sbd:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 8px rgb(70, 98, 173, 32%);
+}
