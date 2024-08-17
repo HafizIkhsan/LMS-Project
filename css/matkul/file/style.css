@@ -1,0 +1,196 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font: 400 12px Plus Jakarta Sans;
+}
+
+a {
+  text-decoration: none;
+  color: #343434;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.header h1 {
+  align-self: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+/* menu */
+
+ul.menu {
+  align-items: center;
+  font-size: 14px;
+}
+
+ul.menu li {
+  margin: 0px 20px;
+  padding: 8px 32px;
+  border-radius: 16px;
+}
+
+ul.menu a {
+  color: #a5a5a5;
+  display: flex;
+  align-items: center;
+}
+
+ul.menu li.active-menu,
+li.active-menu a {
+  background-color: #0c2577;
+  color: white;
+  font-weight: 600;
+}
+
+.menu li:hover {
+  background: #f8f8f8;
+  color: #a5a5a5;
+}
+
+/* profile */
+
+ul.profile-section {
+  align-items: center;
+}
+
+#notification {
+  margin-right: 14px;
+  background-color: #fafafa;
+  border-radius: 16px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#notification div {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile {
+  border: 2px solid #eaeaea;
+  border-radius: 24px;
+  text-decoration: none;
+  background: white;
+}
+
+#profile:hover,
+#profile.active {
+  box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
+  cursor: pointer;
+}
+
+#profile button {
+  padding: 4px;
+  display: flex;
+  font: 400 12px Plus Jakarta Sans;
+  align-items: center;
+}
+
+#profile button img:nth-child(3) {
+  transition: 250ms ease-out;
+  transform: rotate(0);
+}
+
+#profile.active button img:nth-child(3) {
+  transition: 250ms ease-in;
+  transform: rotate(180deg);
+}
+
+#dropdown {
+  margin-top: 8px;
+  background: white;
+  border: 2px solid #eaeaea;
+  border-radius: 16px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 0px;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content.active {
+  display: block;
+  box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
+}
+
+.dropdown-menu a button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font: 300 12px Plus Jakarta Sans;
+  padding: 8px 16px;
+}
+
+.dropdown-menu:hover {
+  background: #eaeaea;
+  cursor: pointer;
+}
+
+.dropdown-menu button img {
+  margin-right: 16px;
+}
+
+/* MAIN */
+/* Main */
+.main {
+  padding: 0px 32px;
+  height: 80vh;
+}
+
+div.background {
+  border-radius: 32px 32px 0 0;
+  background: rgb(215, 215, 215, 13%);
+  padding: 24px;
+  position: static;
+  height: 100%;
+}
+
+div.background h1 {
+  margin: 0;
+  color: black;
+}
+
+/* container */
+.container {
+  margin-top: 16px;
+}
