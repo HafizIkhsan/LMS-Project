@@ -197,7 +197,7 @@ div.background h1 {
 
 /* Subject */
 .subject {
-  width: 18%;
+  width: 100%;
   background-color: white;
   box-shadow: 0px 4px 8px rgb(211, 211, 211, 32%);
   border-radius: 16px;

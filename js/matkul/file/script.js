@@ -1,1 +1,1 @@
-import profile from "../../dashboard/profile-dropdown";
+import profile from "../../dashboard/profile-dropdown.js";
