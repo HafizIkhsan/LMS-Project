@@ -142,6 +142,7 @@ ul.profile-section {
   width: 100%;
   box-sizing: border-box;
   padding: 8px 0px;
+  z-index: 999;
 }
 
 .dropdown-content {
@@ -193,7 +194,7 @@ div.background {
 
 .line {
   margin: 12px 0px;
-  border-bottom: 1.5px solid #c7c7c7;
+  border-bottom: 1.5px solid #eaeaea;
   width: 100%;
   height: 2px;
 }
@@ -230,10 +231,102 @@ div.background {
   cursor: pointer;
   margin-right: 32px;
   font: 800 14px Plus Jakarta Sans;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
 }
 
 .active-submenu {
   border-bottom: 4px solid #0c2577;
   border-radius: 4px;
+}
+
+/* main-content */
+.main-content {
+  padding: 16px 40px;
+}
+
+#left-content {
+  width: 60%;
+}
+
+#right-content {
+  width: 20%;
+}
+
+.main-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  font: 400 12px Plus Jakarta Sans;
+  background-image: url(../../../assets/Profile-Pict/pp.png);
+  background-position: 16px;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  padding: 24px 66px;
+  box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
+}
+
+/* tugas materi post */
+.tugas,
+.materi {
+  display: flex;
+  margin: 16px 0px;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+}
+
+.desc {
+  width: 100%;
+}
+
+.mid-desc {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* post */
+.post {
+  margin: 16px 0px;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.person .desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.isi {
+  width: 100%;
+  height: 50%;
+}
+
+.comment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.comment-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font: 400 12px Plus Jakarta Sans;
 }
