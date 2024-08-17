@@ -200,18 +200,40 @@ div.background {
 
 .hero {
   color: white;
-  height: 20%;
+  height: 15%;
   background-color: #4662ad;
   border-radius: 24px;
   padding: 24px;
+  position: relative;
 }
 
 .subject {
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 38%;
 }
 
 .subject h1 {
   font: 600 32px Plus Jakarta Sans;
   margin-bottom: 4px;
+}
+
+.subject h3 {
+  font: 400 12px Plus Jakarta Sans;
+}
+
+/* Sub-menu */
+.sub-menu {
+  margin: 32px 0px 0px 24px;
+}
+
+.sub-menu li {
+  cursor: pointer;
+  margin-right: 32px;
+  font: 800 14px Plus Jakarta Sans;
+  padding-bottom: 8px;
+}
+
+.active-submenu {
+  border-bottom: 4px solid #0c2577;
+  border-radius: 4px;
 }
