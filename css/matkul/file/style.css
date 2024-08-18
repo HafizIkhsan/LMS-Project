@@ -183,7 +183,7 @@ div.background {
   background: rgb(215, 215, 215, 13%);
   padding: 24px;
   position: static;
-  height: 100%;
+  min-height: 100%;
 }
 
 /* breadcrumb */
@@ -201,7 +201,7 @@ div.background {
 
 .hero {
   color: white;
-  height: 15%;
+  height: 15vh;
   background-color: #4662ad;
   border-radius: 24px;
   padding: 24px;
@@ -210,7 +210,7 @@ div.background {
 
 .subject {
   position: absolute;
-  top: 38%;
+  top: 48%;
 }
 
 .subject h1 {
@@ -242,6 +242,7 @@ div.background {
 /* main-content */
 .main-content {
   padding: 16px 40px;
+  display: flex;
 }
 
 #left-content {
@@ -249,7 +250,9 @@ div.background {
 }
 
 #right-content {
-  width: 20%;
+  width: 40%;
+  padding: 0px 0px 0px 32px;
+  box-sizing: border-box;
 }
 
 .main-input {
@@ -267,6 +270,7 @@ div.background {
 }
 
 /* tugas materi post */
+/* left-side */
 .tugas,
 .materi {
   display: flex;
@@ -300,13 +304,15 @@ div.background {
   border-radius: 16px;
 }
 
-.person {
+.person,
+.lecture-profile {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.person .desc {
+.person .desc,
+.lecture-profile .desc {
   display: flex;
   justify-content: space-between;
 }
@@ -314,6 +320,14 @@ div.background {
 .isi {
   width: 100%;
   height: 50%;
+}
+
+.preview {
+  width: 30%;
+  background-image: url(../../../assets/pdf/A4\ -\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
 }
 
 .comment {
@@ -329,4 +343,64 @@ div.background {
   border-radius: 16px;
   padding: 8px 16px;
   font: 400 12px Plus Jakarta Sans;
+}
+
+/* right-side */
+.lecture {
+  min-width: 40%;
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.members {
+  width: 40%;
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.teks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.users {
+  display: flex;
+  justify-content: space-between;
+}
+
+.users div img {
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 32px;
+}
+
+.absensi {
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  background-color: white;
+}
+
+td {
+  padding: 0px;
+}
+
+.tugas-small {
+  margin-top: 16px;
+  width: 36%;
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.tugas-small ul {
+  list-style-type: disc;
+  padding: 0px 16px;
+  margin-bottom: 8px;
 }
