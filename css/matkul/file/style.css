@@ -461,6 +461,7 @@ td {
   display: flex;
 }
 
+/* middle-side */
 .middle-side {
   width: 100%;
   padding: 0px 24px;
@@ -479,4 +480,60 @@ td {
   display: flex;
   color: #a5a5a5;
   align-items: center;
+}
+
+/* Right-side */
+.tenggat {
+  display: flex;
+  justify-content: space-between;
+  font: 400 10px Plus Jakarta Sans;
+  padding: 0px 4px;
+}
+
+.box-tugas {
+  margin-top: 8px;
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.add {
+  margin-top: 24px;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: white;
+  font: 600 12px Plus Jakarta Sans;
+}
+
+.submit {
+  margin-top: 4px;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #4662ad;
+  color: white;
+  font: 600 12px Plus Jakarta Sans;
+}
+
+.priv-comment {
+  margin-top: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: white;
+  font: 600 12px Plus Jakarta Sans;
+}
+
+.input-comment {
+  display: flex;
+}
+
+.input-comment input {
+  font: 400 10px Plus Jakarta Sans;
 }
