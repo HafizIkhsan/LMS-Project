@@ -423,7 +423,8 @@ td {
   /* display: none; */
 }
 
-#overlay-tugas {
+#overlay-tugas,
+#overlay-materi {
   position: fixed;
   background: white;
   width: 80%;
