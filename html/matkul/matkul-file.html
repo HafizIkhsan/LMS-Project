@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../css/matkul/file/style.css" />
+    <link rel="icon" href="../../assets/Icon/Web-icon/LMS.png" type="image/x-icon" />
   </head>
   <body>
     <section class="header">
@@ -76,7 +77,7 @@
           &nbsp;&nbsp;&nbsp;
           <p>/</p>
           &nbsp;&nbsp;&nbsp;
-          <a href="#"> <u>Sistem Basis Data</u></a>
+          <a href=""> <u>Sistem Basis Data</u></a>
         </div>
         <div class="line"></div>
         <div class="hero">
@@ -175,8 +176,8 @@
               </div>
               <div class="members">
                 <div class="teks">
-                  <p style="margin-bottom: 8px"><b>Peserta</b></p>
-                  <a href="#" style="font: 400 10px Plus Jakarta Sans; color: blue"><b>Lihat semuanya</b></a>
+                  <p><b>Peserta</b></p>
+                  <a href="#" class="lihat"><b>Lihat semuanya</b></a>
                 </div>
                 <div class="users">
                   <div style="position: relative">
@@ -238,7 +239,7 @@
                 </li>
               </ul>
               <p style="text-align: end">
-                <a href="#" style="font: 400 10px Plus Jakarta Sans; color: blue"><b>Lihat Semua Tugas</b></a>
+                <a href="#" class="lihat"><b>Lihat Semua Tugas</b></a>
               </p>
             </div>
           </div>
@@ -310,16 +311,17 @@
             <p>Point: 100 point</p>
           </div>
           <div class="box-tugas">
-            <h3>Tugas</h3>
+            <div style="display: flex; justify-content: space-between">
+              <h3>Tugas</h3>
+              <p><b>Ditugaskan</b></p>
+            </div>
             <button class="add">+ Tambah tugas</button>
             <button class="submit">Kumpulkan</button>
           </div>
           <div class="priv-comment">
-            <div class="btn-allComments" style="padding: 8px 0px">
-              <button style="padding: 0px">
-                <img src="../../assets/Icon/Curved/Profile.svg" alt="" style="margin-right: 8px; width: 16px" />
-                <p><b>Komentar pribadi</b></p>
-              </button>
+            <div style="padding: 8px 0px; display: flex; font: 600 10px Plus Jakarta Sans; color: #a5a5a5">
+              <img src="../../assets/Icon/Curved/Profile.svg" alt="" style="margin-right: 8px; width: 16px" />
+              <p style="align-self: center"><b>Komentar pribadi</b></p>
             </div>
             <div class="input-comment">
               <input class="comment-input" type="text" placeholder="Berikan komentar anda..." />
@@ -384,6 +386,7 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
     <!-- JS -->
     <script type="module" src="../../js/matkul/file/script.js" defer></script>

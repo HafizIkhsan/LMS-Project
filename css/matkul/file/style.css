@@ -31,6 +31,10 @@ button {
   cursor: pointer;
 }
 
+input:focus-visible {
+  outline: 1px solid#0c2577;
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -368,7 +372,7 @@ div.background {
 .teks {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .users {
@@ -380,6 +384,19 @@ div.background {
   position: absolute;
   border: 2px solid white;
   border-radius: 32px;
+}
+
+.lihat {
+  padding: 0px 4px;
+  border-radius: 4px;
+  font: 400 10px Plus Jakarta Sans;
+  color: blue;
+}
+
+.lihat:hover {
+  padding: 0px 4px;
+  border-radius: 4px;
+  background-color: rgba(139, 197, 255, 0.25);
 }
 
 .absensi {
@@ -478,11 +495,13 @@ td {
   width: 40%;
 }
 
-.btn-allComments {
-  padding: 8px;
+.btn-allComments button:hover {
+  background: #f8f8f8;
 }
 
 .btn-allComments button {
+  border-radius: 16px;
+  padding: 4px 8px;
   font: 600 10px Plus Jakarta Sans;
   display: flex;
   color: #a5a5a5;
@@ -515,6 +534,11 @@ td {
   font: 600 12px Plus Jakarta Sans;
 }
 
+.add:hover {
+  color: #342f2f;
+  border: 1px solid #0c2577;
+}
+
 .submit {
   margin-top: 4px;
   width: 100%;
@@ -524,6 +548,11 @@ td {
   background-color: #4662ad;
   color: white;
   font: 600 12px Plus Jakarta Sans;
+}
+
+.submit:hover {
+  background-color: #203776;
+  color: white;
 }
 
 .priv-comment {
