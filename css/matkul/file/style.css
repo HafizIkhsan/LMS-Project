@@ -420,7 +420,7 @@ td {
   bottom: 0;
   cursor: pointer;
   z-index: 98;
-  /* display: none; */
+  display: none;
 }
 
 #overlay-tugas,
@@ -437,7 +437,12 @@ td {
   -ms-transform: translate(-50%, -50%);
   cursor: default;
   z-index: 99;
-  /* display: none; */
+  display: none;
+}
+
+.tugas:hover,
+.materi:hover {
+  cursor: pointer;
 }
 
 #heading {

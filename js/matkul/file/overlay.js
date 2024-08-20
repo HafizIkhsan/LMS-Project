@@ -7,13 +7,13 @@ const body = document.body;
 
 tugas.addEventListener("click", function () {
   background.style.display = "block";
-  body.style.position = "fixed";
+  body.style.position = "sticky";
   overlayTugas.style.display = "block";
 });
 
 materi.addEventListener("click", function () {
   background.style.display = "block";
-  body.style.position = "fixed";
+  body.style.position = "sticky";
   overlayMateri.style.display = "block";
 });
 
