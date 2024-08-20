@@ -440,8 +440,7 @@ td {
   display: none;
 }
 
-#overlay-tugas,
-#overlay-materi {
+.overlay {
   position: fixed;
   background: white;
   width: 80%;
@@ -457,6 +456,13 @@ td {
   display: none;
 }
 
+#overlay-tugas.full,
+#overlay-materi.full {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
 .tugas:hover,
 .materi:hover {
   cursor: pointer;
@@ -466,6 +472,11 @@ td {
 #heading {
   width: 100%;
   display: flex;
+}
+
+.close:hover,
+.expand:hover {
+  opacity: 100% !important;
 }
 
 .left-side {

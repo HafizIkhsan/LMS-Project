@@ -316,3 +316,7 @@ table {
   width: 16px;
   text-align: center;
 }
+
+img#close:hover {
+  opacity: 100% !important;
+}
