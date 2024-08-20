@@ -443,6 +443,7 @@ td {
 .tugas:hover,
 .materi:hover {
   cursor: pointer;
+  background: #f8f8f8;
 }
 
 #heading {
