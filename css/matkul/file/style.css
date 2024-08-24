@@ -3,7 +3,7 @@
 
 html,
 body {
-  width: 100%;
+  min-width: 100%;
   margin: 0;
   min-height: 100%;
   font: 400 12px Plus Jakarta Sans;
@@ -31,8 +31,8 @@ button {
   cursor: pointer;
 }
 
-input:focus-visible {
-  outline: 1px solid#0c2577;
+textarea {
+  resize: none;
 }
 
 /* HEADER */
@@ -181,7 +181,7 @@ ul.profile-section {
 /* Main */
 .main {
   padding: 0px 32px;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 div.background {
@@ -261,20 +261,28 @@ div.background {
   box-sizing: border-box;
 }
 
-.main-input {
+.input-container {
+  display: flex;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #eaeaea;
   border-radius: 16px;
-  font: 400 12px Plus Jakarta Sans;
-  background-image: url(../../../assets/Profile-Pict/pp.png);
-  background-position: 16px;
-  background-repeat: no-repeat;
-  background-size: 32px;
-  padding: 24px 66px;
+  padding: 16px 16px;
   box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
+  background-color: white;
 }
 
+.main-input {
+  width: 100%;
+  font: 400 12px Plus Jakarta Sans;
+  border-color: white;
+  display: block;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
 /* tugas materi post */
 /* left-side */
 .tugas,

@@ -11,44 +11,47 @@ const body = document.body;
 tugas.addEventListener("click", function () {
   background.style.display = "block";
   body.style.overflow = "hidden";
-  overlay.style.display = "block";
+  overlayTugas.style.display = "block";
 });
 
 materi.addEventListener("click", function () {
   background.style.display = "block";
   body.style.overflow = "hidden";
-  overlay.style.display = "block";
+  overlayMateri.style.display = "block";
 });
 
 //Close overlay
 close.forEach(function (e) {
   e.addEventListener("click", function () {
+    const button = e.closest(".overlay");
     background.style.display = "none";
     body.style.overflow = "scroll";
-    overlay.style.display = "none";
-    overlay.classList.remove("ful");
+    button.style.display = "none";
+    button.classList.remove("full");
   });
 });
 
 background.addEventListener("click", function () {
   background.style.display = "none";
   body.style.overflow = "scroll";
-  overlay.style.display = "none";
-  overlay.classList.remove("ful");
+  overlayMateri.style.display = "none";
+  overlayTugas.style.display = "none";
+  overlayMateri.classList.remove("full");
+  overlayTugas.classList.remove("full");
 });
 
 // Expand & Shrink Overlay
 const expand = document.querySelectorAll(".expand");
 expand.forEach(function (e) {
   e.addEventListener("click", function () {
-    if (overlay.classList.contains("full")) {
-      overlay.classList.remove("full");
+    const button = e.closest(".overlay");
+    if (button.classList.contains("full")) {
+      button.classList.remove("full");
       e.setAttribute("src", "../../assets/Icon/Light/Expand.svg");
     } else {
-      overlay.classList.add("full");
+      button.classList.add("full");
       e.setAttribute("src", "../../assets/Icon/Light/Shrink.svg");
     }
   });
 });
-
 export { tugas, materi, background, close };
