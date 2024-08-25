@@ -35,6 +35,8 @@ batalkanButton.addEventListener("click", function () {
   for (let i = 0; i < additionals.length; i++) {
     additionals[i].style.display = "none";
   }
+  textArea.value = "";
+  event.preventDefault();
 });
 
 export { container, batalkanButton };
