@@ -35,6 +35,10 @@ textarea {
   resize: none;
 }
 
+textarea:focus-visible {
+  outline: 2px solid #0c2577;
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -296,12 +300,16 @@ div.background {
 #batalkan {
   padding: 8px 16px;
   border-radius: 4px;
+  font: 300 12px Plus Jakarta Sans;
+  margin-right: 16px;
+  color: #a5a5a5;
 }
 
 #batalkan:hover {
   padding: 8px 16px;
   border-radius: 4px;
   background-color: #eaeaea;
+  color: black;
 }
 
 #submit {
