@@ -277,12 +277,67 @@ div.background {
   font: 400 12px Plus Jakarta Sans;
   border-color: white;
   display: block;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.name {
+  margin-bottom: 16px;
+  display: none;
+  margin-top: 4px;
 }
 
 .text {
   display: flex;
   align-items: center;
+  min-height: 40px;
 }
+
+#batalkan {
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+#batalkan:hover {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #eaeaea;
+}
+
+#submit {
+  padding: 8px 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #eaeaea;
+  color: white;
+  cursor: default;
+}
+
+#submit.active {
+  border: 1px solid #4662ad;
+  border-radius: 8px;
+  background-color: #4662ad;
+  cursor: pointer;
+}
+
+#submit.active:hover {
+  border: 1px solid #0c2577;
+  border-radius: 8px;
+  background-color: #0c2577;
+  cursor: pointer;
+}
+
+.input {
+  display: none;
+  justify-content: end;
+}
+
+.input button,
+.input input {
+  font: 400 12px Plus Jakarta Sans;
+  cursor: pointer;
+}
+
 /* tugas materi post */
 /* left-side */
 .tugas,

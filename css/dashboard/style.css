@@ -507,6 +507,7 @@ li.material {
 #reminder.active {
   background: white;
   border: 2px solid #fff731;
+  cursor: default;
 }
 
 .reminder {

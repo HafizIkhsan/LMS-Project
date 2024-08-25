@@ -97,16 +97,22 @@
         <div class="main-content">
           <div id="left-content">
             <div id="forum">
-              <form action="#">
+              <form style="position: relative">
+                <div class="click-expand" style="width: 100%; display: block; height: 76px; position: absolute; cursor: pointer"></div>
                 <div class="input-container">
-                  <div class="profile-pict"><img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="notification" style="width: 40px; border-radius: 40px; margin-right: 16px" /></div>
-                  <div class="text" style="width: 100%">
-                    <div class="name" style="display: none">
+                  <div><img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="notification" style="width: 40px; border-radius: 40px; margin-right: 16px" /></div>
+                  <div class="right-side" style="width: 100%">
+                    <div class="name additional">
                       <p><b>Muhammad Hafiz Ikhsan</b></p>
+                      <p style="font: 200 10px Plus Jakarta Sans; color: #a5a5a5">Baru saja</p>
                     </div>
-                    <textarea rows="1" class="main-input" name="" id="main-input" placeholder="Posting sesuatu dikelas..."></textarea>
-                    <button>Batalkan</button>
-                    <button>Kirim</button>
+                    <div class="text">
+                      <textarea rows="1" class="main-input" name="" id="main-input" placeholder="Posting sesuatu dikelas..."></textarea>
+                    </div>
+                    <div class="input additional">
+                      <button id="batalkan" style="font: 300 12px Plus Jakarta Sans; margin-right: 16px">Batalkan</button>
+                      <button><input type="submit" value="Submit" class="kirim" id="submit" /></button>
+                    </div>
                   </div>
                 </div>
               </form>
@@ -136,7 +142,7 @@
                 <div class="person">
                   <img src="../../assets/Profile-Pict/michael.svg" alt="" style="margin-right: 16px" />
                   <div class="desc">
-                    <div class="name">
+                    <div>
                       <p><b>2011 Michael Angelo</b></p>
                       <p>10 Juni 2024</p>
                     </div>
@@ -162,7 +168,7 @@
                 <div class="line"></div>
                 <div class="comment">
                   <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
-                  <textarea class="comment-input" name="" id=""></textarea>
+                  <textarea rows="1" class="comment-input" name="" id="" placeholder="Tambahkan komentar Anda..."></textarea>
                   <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
                 </div>
               </div>
@@ -175,7 +181,7 @@
                 <div class="lecture-profile">
                   <img src="../../assets/Profile-Pict/Sobari.svg" alt="" style="margin-right: 16px" />
                   <div class="desc">
-                    <div class="name">
+                    <div>
                       <p><b>Muhammad Sobari M.Kom</b></p>
                       <p>+62 897 9123 3456</p>
                     </div>
@@ -300,7 +306,7 @@
             <div class="comment">
               <img src="../../assets/Profile-Pict/person-2.svg" alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
               <div class="desc">
-                <div class="name">
+                <div>
                   <p style="color: #a5a5a5"><b style="color: black">2088 Nadia Suci</b> &#128900; 20 menit yang lalu</p>
                   <p>Baik Pak</p>
                 </div>
@@ -381,7 +387,7 @@
             <div class="comment">
               <img src="../../assets/Profile-Pict/person-2.svg" alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
               <div class="desc">
-                <div class="name">
+                <div>
                   <p style="color: #a5a5a5"><b style="color: black">2088 Nadia Suci</b> &#128900; 20 menit yang lalu</p>
                   <p>Baik Pak</p>
                 </div>
