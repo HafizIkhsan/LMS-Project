@@ -54,10 +54,10 @@ let createPost = () => {
             <img class="settings" src="../../assets/Icon/Filled/Settings.svg" alt="" style="opacity: 50%; margin-right: 16px" />
             <div class="overlay-settings">
               <ul>
-                <li onClick ="editPost(this)">Edit</li>
+                <li class="edit">Edit</li>
               </ul>
               <ul>
-                <li onClick ="deletePost()" class="delete">Hapus</li>
+                <li class="delete">Hapus</li>
               </ul>
             </div>
             </div>
@@ -85,10 +85,23 @@ document.addEventListener("click", (e) => {
     }
   } else if (e.target.classList.contains("delete")) {
     e.target.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
+  } else if (e.target.classList.contains("edit")) {
+    const postContent = e.target.parentElement.parentElement.parentElement.parentElement.nextElementSibling.nextElementSibling.firstElementChild.innerHTML;
+    const formattedContent = postContent.replace(/<br\s*\/?>/gi, "\n");
+    textArea.value = formattedContent;
+    inputClick.style.display = "none";
+    textArea.setAttribute("rows", "4");
+    textArea.style.marginBottom = "16px";
+    textArea.style.backgroundColor = "#f8f8f8";
+    for (let i = 0; i < additionals.length; i++) {
+      if (i == 0) {
+        additionals[i].style.display = "block";
+      } else {
+        additionals[i].style.display = "flex";
+      }
+    }
+    e.target.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
   }
 });
-
-// Edit post
-let editPost = (e) => {};
 
 export default deletePost;
