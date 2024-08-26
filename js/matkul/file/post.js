@@ -6,6 +6,7 @@ const additionals = document.querySelectorAll(".additional");
 
 let data = {};
 
+// Form
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   inputClick.style.display = "block";
@@ -18,13 +19,29 @@ form.addEventListener("submit", (e) => {
   acceptData();
 });
 
+// Nerima data
 let acceptData = () => {
   data["text"] = textArea.value;
 
   createPost();
 };
 
+// Enter text
+form.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    textArea.value += `\n`;
+  }
+});
+
+// Delete post
+let deletePost = (e) => {
+  e.parentElement.parentElement.parentElement.parentElement.remove();
+};
+
+// Buat postingan
 let createPost = () => {
+  const formattedText = textArea.value.replace(/\n/g, "<br>");
   posts.innerHTML += `
     <div class="post">
         <div class="person">
@@ -34,12 +51,20 @@ let createPost = () => {
                 <p><b>Anda</b></p>
                 <p>Baru saja</p>
             </div>
-            <img src="../../assets/Icon/Filled/Settings.svg" alt="" style="opacity: 50%; margin-right: 16px" />
+            <img class="settings" src="../../assets/Icon/Filled/Settings.svg" alt="" style="opacity: 50%; margin-right: 16px" />
+            <div class="overlay-settings">
+              <ul>
+                <li onClick ="editPost(this)">Edit</li>
+              </ul>
+              <ul>
+                <li onClick ="deletePost()" class="delete">Hapus</li>
+              </ul>
+            </div>
             </div>
         </div>
         <div class="line"></div>
         <div class="isi">
-            <p>${data.text}</p>
+            <p>${formattedText}</p>
         </div>
         <div class="line"></div>
         <div class="comment">
@@ -51,4 +76,19 @@ let createPost = () => {
   textArea.value = "";
 };
 
-export default data;
+// Settings
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("settings")) {
+    const overlay = e.target.nextElementSibling;
+    if (overlay) {
+      overlay.style.display = overlay.style.display === "block" ? "none" : "block";
+    }
+  } else if (e.target.classList.contains("delete")) {
+    e.target.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
+  }
+});
+
+// Edit post
+let editPost = (e) => {};
+
+export default deletePost;

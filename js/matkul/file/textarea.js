@@ -21,13 +21,16 @@ inputClick.addEventListener("click", function () {
   textArea.addEventListener("input", function (e) {
     if (e.target.value.length !== 0) {
       submitButton.classList.add("active");
+      submitButton.removeAttribute("disabled");
     } else {
       submitButton.classList.remove("active");
     }
   });
+  submitButton.setAttribute("disabled", "");
+  submitButton.classList.remove("active");
 });
 
-batalkanButton.addEventListener("click", function () {
+batalkanButton.addEventListener("click", function (e) {
   inputClick.style.display = "block";
   textArea.setAttribute("rows", "1");
   textArea.style.marginBottom = "0px";
@@ -36,7 +39,7 @@ batalkanButton.addEventListener("click", function () {
     additionals[i].style.display = "none";
   }
   textArea.value = "";
-  event.preventDefault();
+  e.preventDefault();
 });
 
 export { container, batalkanButton };
