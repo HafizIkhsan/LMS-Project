@@ -1,3 +1,5 @@
+import { batalkanButton } from "./textarea.js";
+
 const form = document.getElementById("form");
 const textArea = document.getElementById("main-input");
 const posts = document.getElementById("posts");
@@ -5,6 +7,8 @@ const inputClick = document.querySelector(".click-expand");
 const additionals = document.querySelectorAll(".additional");
 
 let data = {};
+let isEditing = false;
+let originalContent = "";
 
 // Form
 form.addEventListener("submit", (e) => {
@@ -22,8 +26,8 @@ form.addEventListener("submit", (e) => {
 // Nerima data
 let acceptData = () => {
   data["text"] = textArea.value;
-
-  createPost();
+  const formattedText = textArea.value.replace(/\n/g, "<br>");
+  createPost(formattedText);
 };
 
 // Enter text
@@ -40,8 +44,7 @@ let deletePost = (e) => {
 };
 
 // Buat postingan
-let createPost = () => {
-  const formattedText = textArea.value.replace(/\n/g, "<br>");
+let createPost = (text) => {
   posts.innerHTML += `
     <div class="post">
         <div class="person">
@@ -64,7 +67,7 @@ let createPost = () => {
         </div>
         <div class="line"></div>
         <div class="isi">
-            <p>${formattedText}</p>
+            <p>${text}</p>
         </div>
         <div class="line"></div>
         <div class="comment">
@@ -86,7 +89,9 @@ document.addEventListener("click", (e) => {
   } else if (e.target.classList.contains("delete")) {
     e.target.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
   } else if (e.target.classList.contains("edit")) {
-    const postContent = e.target.parentElement.parentElement.parentElement.parentElement.nextElementSibling.nextElementSibling.firstElementChild.innerHTML;
+    isEditing = true;
+    let postContent = e.target.parentElement.parentElement.parentElement.parentElement.nextElementSibling.nextElementSibling.firstElementChild.innerHTML;
+    originalContent = postContent;
     const formattedContent = postContent.replace(/<br\s*\/?>/gi, "\n");
     textArea.value = formattedContent;
     inputClick.style.display = "none";
@@ -101,6 +106,12 @@ document.addEventListener("click", (e) => {
       }
     }
     e.target.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
+  } else if (e.target.id === "submit" && isEditing === true) {
+    isEditing = false;
+  } else if (e.target.id === "batalkan" && isEditing === true) {
+    createPost(originalContent);
+    console.log("edit clicked");
+    isEditing = false;
   }
 });
 
