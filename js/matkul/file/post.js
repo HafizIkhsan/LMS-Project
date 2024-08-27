@@ -118,4 +118,4 @@ document.addEventListener("click", (e) => {
   }
 });
 
-export default deletePost;
+export default form;
