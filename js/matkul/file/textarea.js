@@ -5,6 +5,10 @@ const additionals = container.querySelectorAll(".additional");
 const batalkanButton = container.querySelector("#batalkan");
 const submitButton = container.querySelector("#submit");
 
+const npm = localStorage.getItem("npm");
+const name = document.getElementById("name-form");
+name.innerHTML = npm;
+
 inputClick.addEventListener("click", function () {
   inputClick.style.display = "none";
   textArea.setAttribute("rows", "4");

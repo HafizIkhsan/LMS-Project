@@ -1,4 +1,4 @@
-import { batalkanButton } from "./textarea.js";
+import comment from "./comment.js";
 
 const form = document.getElementById("form");
 const textArea = document.getElementById("main-input");
@@ -72,11 +72,12 @@ let createPost = (text) => {
             <p>${text}</p>
         </div>
         <div class="line"></div>
-        <div class="comment">
-            <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
-            <textarea rows="1" class="comment-input" name="" id="" placeholder="Tambahkan komentar Anda..."></textarea>
-            <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
-        </div>
+        <div id="comment-person"></div>
+        <form class="comment">
+          <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
+          <textarea rows="1" class="comment-input" name="" id="" placeholder="Tambahkan komentar Anda..."></textarea>
+          <button class="send" type="submit" style="margin: 0px 8px; display: flex; align-items: center; cursor: default" disabled><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
+        </form>
     </div>`
   );
   textArea.value = "";

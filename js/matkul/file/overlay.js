@@ -34,6 +34,7 @@ close.forEach(function (e) {
 background.addEventListener("click", function () {
   background.style.display = "none";
   body.style.overflow = "scroll";
+  body.style.overflowX = "hidden";
   overlayMateri.style.display = "none";
   overlayTugas.style.display = "none";
   overlayMateri.classList.remove("full");

@@ -103,7 +103,7 @@
                   <div><img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="notification" style="width: 40px; border-radius: 40px; margin-right: 16px" /></div>
                   <div class="right-side" style="width: 100%">
                     <div class="name additional">
-                      <p><b>Muhammad Hafiz Ikhsan</b></p>
+                      <p><b id="name-form">Muhammad Hafiz Ikhsan</b></p>
                       <p style="font: 200 10px Plus Jakarta Sans; color: #a5a5a5">Baru saja</p>
                     </div>
                     <div class="text">
@@ -172,7 +172,7 @@
                   </div>
                 </div>
                 <div class="line"></div>
-                <div id="comment-person"></div>
+                <div class="comment-person"></div>
                 <form class="comment">
                   <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
                   <textarea rows="1" class="comment-input" name="" id="" placeholder="Tambahkan komentar Anda..."></textarea>
@@ -180,6 +180,7 @@
                 </form>
               </div>
             </div>
+            <div id="materi"></div>
           </div>
           <div id="right-content">
             <div style="display: flex; justify-content: space-between; margin-bottom: 16px">
@@ -319,11 +320,12 @@
                 </div>
               </div>
             </div>
-            <div class="comment">
+            <div class="comment-person"></div>
+            <form class="comment">
               <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
               <input class="comment-input" type="text" placeholder="Berikan komentar anda..." />
               <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
-            </div>
+            </form>
           </div>
         </div>
         <div class="right-side">
@@ -339,14 +341,16 @@
             <button class="add">+ Tambah tugas</button>
             <button class="submit">Kumpulkan</button>
           </div>
+
           <div class="priv-comment">
             <div style="padding: 8px 0px; display: flex; font: 600 10px Plus Jakarta Sans; color: #a5a5a5">
               <img src="../../assets/Icon/Curved/Profile.svg" alt="" style="margin-right: 8px; width: 16px" />
               <p style="align-self: center"><b>Komentar pribadi</b></p>
             </div>
-            <form class="input-comment">
+            <div class="comment-person"></div>
+            <form class="comment">
               <input class="comment-input" type="text" placeholder="Berikan komentar anda..." />
-              <button type="submit" style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
+              <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
             </form>
           </div>
         </div>
@@ -400,11 +404,12 @@
                 </div>
               </div>
             </div>
-            <div class="comment">
+            <div class="comment-person"></div>
+            <form class="comment">
               <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
               <input class="comment-input" type="text" placeholder="Berikan komentar anda..." />
               <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

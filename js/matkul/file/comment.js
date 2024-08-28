@@ -1,12 +1,12 @@
 const form = document.querySelectorAll(".comment");
 const textArea = document.querySelectorAll(".comment-input");
-const comments = document.getElementById("comment-person");
 
 const npm = localStorage.getItem("npm");
 // name.innerHTML = npm;
 
 let data = {};
 
+// click form icon change
 form.forEach((e) => {
   e.addEventListener("click", () => {
     textArea.forEach((t) => {
@@ -29,27 +29,30 @@ form.forEach((e) => {
   });
 });
 
+// submit form
 form.forEach((e) => {
   e.addEventListener("submit", (e) => {
     e.preventDefault();
+    let comments = e.target.previousElementSibling;
     let icon = e.target.lastElementChild.firstElementChild;
     icon.setAttribute("src", "../../assets/Icon/Curved/Send.svg");
     let button = e.target.lastElementChild;
     button.style.cursor = "default";
     let text = e.target.firstElementChild.nextElementSibling.value;
-    acceptData(text);
+    acceptData(text, comments);
+    e.target.firstElementChild.nextElementSibling.value = "";
   });
 });
 
 // Nerima data
-let acceptData = (text) => {
+let acceptData = (text, comments) => {
   data["text"] = text;
   // const formattedText = textArea.value.replace(/\n/g, "<br>");
-  createPost(data["text"]);
+  createPost(data["text"], comments);
 };
 
 // Buat postingan
-let createPost = (data) => {
+let createPost = (data, comments) => {
   comments.innerHTML += `            
   <div class="comment">
     <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
@@ -62,4 +65,5 @@ let createPost = (data) => {
   </div>
   `;
 };
+
 export default document;
