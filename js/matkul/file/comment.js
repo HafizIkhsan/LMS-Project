@@ -38,9 +38,15 @@ form.forEach((e) => {
     icon.setAttribute("src", "../../assets/Icon/Curved/Send.svg");
     let button = e.target.lastElementChild;
     button.style.cursor = "default";
-    let text = e.target.firstElementChild.nextElementSibling.value;
-    acceptData(text, comments);
-    e.target.firstElementChild.nextElementSibling.value = "";
+    if (e.target.classList.contains("priv")) {
+      let text = e.target.firstElementChild.value;
+      createPrivatePost(text, comments);
+      e.target.firstElementChild.value = "";
+    } else {
+      let text = e.target.firstElementChild.nextElementSibling.value;
+      acceptData(text, comments);
+      e.target.firstElementChild.nextElementSibling.value = "";
+    }
   });
 });
 
@@ -51,7 +57,7 @@ let acceptData = (text, comments) => {
   createPost(data["text"], comments);
 };
 
-// Buat postingan
+// Buat komentar
 let createPost = (data, comments) => {
   comments.innerHTML += `            
   <div class="comment">
@@ -60,6 +66,21 @@ let createPost = (data, comments) => {
       <div>
         <p style="color: #a5a5a5"><b style="color: black">${npm}</b> &#128900; Baru saja</p>
         <p>${data}</p>
+      </div>
+    </div>
+  </div>
+  `;
+};
+
+// Buat komentar pribadi
+let createPrivatePost = (data, comments) => {
+  comments.innerHTML += `            
+  <div class="comment">
+    <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="" style="margin-right: 8px; width: 32px; border-radius: 24px" />
+    <div class="desc">
+      <div>
+        <p style="color: #a5a5a5; font:400 10px Plus Jakarta Sans"><b style="color: black">${npm}</b> &#128900; Baru saja</p>
+        <p style="font:400 10px Plus Jakarta Sans">${data}</p>
       </div>
     </div>
   </div>

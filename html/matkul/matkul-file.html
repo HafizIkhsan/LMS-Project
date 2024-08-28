@@ -122,7 +122,7 @@
                 <div class="desc">
                   <p>Tugas</p>
                   <div class="mid-desc">
-                    <h3>Soal Pertemuan 13</h3>
+                    <h3 class="judul">Soal Pertemuan 13</h3>
                     <div style="display: flex; justify-content: center">Lihat Tugas <img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
                   </div>
                   <p style="color: #a5a5a5">17 Juni 2024</p>
@@ -131,12 +131,12 @@
               <div class="materi">
                 <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
                 <div class="desc">
-                  <p>Materi</p>
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 13</span></p>
                   <div class="mid-desc">
-                    <h3 id="judul">Query By Example</h3>
+                    <h3 class="judul">Query By Example</h3>
                     <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
                   </div>
-                  <p style="color: #a5a5a5" id="date">17 Juni 2024</p>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
                 </div>
               </div>
               <div class="post">
@@ -179,8 +179,51 @@
                   <button class="send" type="submit" style="margin: 0px 8px; display: flex; align-items: center; cursor: default" disabled><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
                 </form>
               </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 12</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">QUEL</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 11</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Aljabar Relasional</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 10</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Structure Query Language</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 9</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Normalisasi Basis Data</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
             </div>
-            <div id="materi"></div>
           </div>
           <div id="right-content">
             <div style="display: flex; justify-content: space-between; margin-bottom: 16px">
@@ -276,8 +319,9 @@
         </div>
         <div class="mid-right">
           <div>
-            <h1>Soal Pertemuan 13</h1>
-            <p>Muhammad Sobari M.Kom &#128900; Senin, 17 Juni 2024</p>
+            <h1 id="judul"></h1>
+            <p id="nm-dosen-tugas" style="display: inline">&#128900;</p>
+            <p id="tanggal-tugas" style="display: inline"></p>
           </div>
           <div style="align-self: baseline; display: flex">
             <img class="expand" src="../../assets/Icon/Light/Expand.svg" alt="" style="cursor: pointer; width: 20px; margin-right: 8px; opacity: 50%" />
@@ -323,7 +367,7 @@
             <div class="comment-person"></div>
             <form class="comment">
               <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
-              <input class="comment-input" type="text" placeholder="Berikan komentar anda..." />
+              <textarea rows="1" class="comment-input" type="text" placeholder="Berikan komentar anda..."></textarea>
               <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
             </form>
           </div>
@@ -348,9 +392,9 @@
               <p style="align-self: center"><b>Komentar pribadi</b></p>
             </div>
             <div class="comment-person"></div>
-            <form class="comment">
-              <input class="comment-input" type="text" placeholder="Berikan komentar anda..." />
-              <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
+            <form class="comment priv">
+              <textarea rows="1" style="font: 400 10px Plus Jakarta Sans" class="comment-input" type="text" placeholder="Berikan komentar anda..."></textarea>
+              <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" style="width: 20px" /></button>
             </form>
           </div>
         </div>
@@ -363,8 +407,13 @@
         </div>
         <div class="mid-right">
           <div>
-            <h1>Pertemuan 13 - Query By Example</h1>
-            <p>Muhammad Sobari M.Kom &#128900; Senin, 17 Juni 2024</p>
+            <div class="judul-materi" style="display: flex">
+              <h1 id="pertemuan-materi"></h1>
+              <h1>&#128900;</h1>
+              <h1 id="judul-materi"></h1>
+            </div>
+            <p id="nm-dosen-materi" style="display: inline">&#128900;</p>
+            <p id="tanggal-materi" style="display: inline"></p>
           </div>
           <div style="align-self: baseline; display: flex">
             <img class="expand" src="../../assets/Icon/Light/Expand.svg" alt="" style="cursor: pointer; width: 20px; margin-right: 8px; opacity: 50%" />
