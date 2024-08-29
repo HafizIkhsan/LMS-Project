@@ -70,7 +70,6 @@ let dosen = (e, id) => {
   let dosen = e.parentElement.parentElement.nextElementSibling.firstElementChild.firstElementChild.lastElementChild.lastElementChild.firstElementChild.firstElementChild.firstElementChild;
   let dosenOverlay = document.getElementById(id);
   dosenOverlay.innerHTML = dosen.innerHTML;
-  console.log(dosenOverlay);
 };
 //Close overlay
 close.forEach(function (e) {

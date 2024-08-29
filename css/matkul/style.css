@@ -197,7 +197,7 @@ div.background h1 {
 
 /* Subject */
 .subject {
-  width: 100%;
+  width: 16vw;
   background-color: white;
   box-shadow: 0px 4px 8px rgb(211, 211, 211, 32%);
   border-radius: 16px;
@@ -245,4 +245,5 @@ div.background h1 {
 #sbd:hover {
   cursor: pointer;
   box-shadow: 0px 8px 8px rgb(70, 98, 173, 32%);
+  border-radius: 16px;
 }

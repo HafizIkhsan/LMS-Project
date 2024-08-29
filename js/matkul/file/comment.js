@@ -1,53 +1,45 @@
-const form = document.querySelectorAll(".comment");
-const textArea = document.querySelectorAll(".comment-input");
-
 const npm = localStorage.getItem("npm");
 // name.innerHTML = npm;
 
 let data = {};
 
 // click form icon change
-form.forEach((e) => {
-  e.addEventListener("click", () => {
-    textArea.forEach((t) => {
-      t.addEventListener("input", (text) => {
-        if (text.target.value.length != 0) {
-          let icon = text.target.nextElementSibling.firstElementChild;
-          icon.setAttribute("src", "../../assets/Icon/Filled/Send-Active.svg");
-          let button = text.target.nextElementSibling;
-          button.style.cursor = "pointer";
-          button.removeAttribute("disabled");
-        } else {
-          let icon = text.target.nextElementSibling.firstElementChild;
-          icon.setAttribute("src", "../../assets/Icon/Curved/Send.svg");
-          let button = text.target.nextElementSibling;
-          button.style.cursor = "default";
-          button.setAttribute("disabled", "");
-        }
-      });
-    });
-  });
+document.addEventListener("input", (e) => {
+  if (e.target.classList.contains("comment-input")) {
+    let icon = e.target.nextElementSibling.firstElementChild;
+    if (e.target.value.length != 0) {
+      icon.setAttribute("src", "../../assets/Icon/Filled/Send-Active.svg");
+      let button = e.target.nextElementSibling;
+      button.style.cursor = "pointer";
+      button.removeAttribute("disabled");
+    } else {
+      icon.setAttribute("src", "../../assets/Icon/Curved/Send.svg");
+      let button = e.target.nextElementSibling;
+      button.style.cursor = "default";
+      button.setAttribute("disabled", "");
+    }
+  }
 });
 
 // submit form
-form.forEach((e) => {
-  e.addEventListener("submit", (e) => {
-    e.preventDefault();
+document.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (e.target.classList.contains("comment")) {
     let comments = e.target.previousElementSibling;
     let icon = e.target.lastElementChild.firstElementChild;
     icon.setAttribute("src", "../../assets/Icon/Curved/Send.svg");
     let button = e.target.lastElementChild;
     button.style.cursor = "default";
+
+    let text = e.target.querySelector(".comment-input").value;
     if (e.target.classList.contains("priv")) {
-      let text = e.target.firstElementChild.value;
       createPrivatePost(text, comments);
-      e.target.firstElementChild.value = "";
     } else {
-      let text = e.target.firstElementChild.nextElementSibling.value;
       acceptData(text, comments);
-      e.target.firstElementChild.nextElementSibling.value = "";
     }
-  });
+    e.target.querySelector(".comment-input").value = "";
+  }
 });
 
 // Nerima data
