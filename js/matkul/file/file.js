@@ -4,6 +4,7 @@ let time = localStorage.getItem("waktu");
 let subjectName = localStorage.getItem("namaMatkul");
 let lectureName = localStorage.getItem("namaDosen");
 let lecturePhone = localStorage.getItem("tlpnDosen");
+let lecturePhoto = localStorage.getItem("lecturePic");
 let bgColor = localStorage.getItem("bgColor");
 
 // bg Hero
@@ -14,6 +15,8 @@ let matkul = document.querySelectorAll(".matkul");
 matkul.forEach((e) => {
   e.innerHTML = subjectName;
 });
+
+document.getElementById("picLecture").setAttribute("src", `../../assets/Profile-Pict/${lecturePhoto}`);
 
 document.getElementById("tgl").innerHTML = `${day}, ${time}`;
 document.getElementById("dosen").innerHTML = lectureName;
