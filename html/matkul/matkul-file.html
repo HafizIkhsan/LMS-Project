@@ -86,18 +86,18 @@
             <h3>Senin, 14:10 - 15:50</h3>
           </div>
         </div>
-        <div class="sub-menu">
+        <div id="sub-menu">
           <ul>
-            <li class="active-submenu">Forum</li>
-            <li>Materi</li>
-            <li>Tugas</li>
+            <li id="forum" class="active-submenu">Forum</li>
+            <li id="materi">Materi</li>
+            <li id="tugas">Tugas</li>
           </ul>
         </div>
         <div class="line"></div>
-        <div class="main-content">
-          <div id="left-content">
-            <div>
-              <form style="position: relative" id="form">
+        <div id="main-content">
+          <div class="left-content">
+            <div id="forum-content">
+              <form style="position: relative" id="form" class="forum-content">
                 <div class="click-expand" style="width: 100%; display: block; height: 76px; position: absolute; cursor: pointer"></div>
                 <div class="input-container">
                   <div><img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="notification" style="width: 40px; border-radius: 40px; margin-right: 16px" /></div>
@@ -187,7 +187,7 @@
                     <h3 class="judul">QUEL</h3>
                     <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
                   </div>
-                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                  <p style="color: #a5a5a5">12 Juni 2024</p>
                 </div>
               </div>
               <div class="materi">
@@ -198,7 +198,7 @@
                     <h3 class="judul">Aljabar Relasional</h3>
                     <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
                   </div>
-                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                  <p style="color: #a5a5a5">05 Juni 2024</p>
                 </div>
               </div>
               <div class="materi">
@@ -209,7 +209,7 @@
                     <h3 class="judul">Structure Query Language</h3>
                     <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
                   </div>
-                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                  <p style="color: #a5a5a5">29 Mei 2024</p>
                 </div>
               </div>
               <div class="materi">
@@ -220,12 +220,181 @@
                     <h3 class="judul">Normalisasi Basis Data</h3>
                     <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
                   </div>
+                  <p style="color: #a5a5a5">22 Mei 2024</p>
+                </div>
+              </div>
+              <div class="tugas">
+                <img src="../../assets/Icon/Curved/Tugas.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Tugas</p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Ujian Tengah Semester</h3>
+                    <div style="display: flex; justify-content: center">Lihat Tugas <img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">14 Mei 2024</p>
+                </div>
+              </div>
+            </div>
+            <div id="materi-content" style="display: none">
+              <div class="materi" style="margin-top: 0px">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 13</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Query By Example</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 12</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">QUEL</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">12 Juni 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 11</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Aljabar Relasional</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">05 Juni 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 10</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Structure Query Language</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">29 Mei 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 9</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Normalisasi Basis Data</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">22 Mei 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 7</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Dependency (Ketergantungan)</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">24 April 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 6</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Contoh kasus ERD</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 April 2024</p>
+                </div>
+              </div>
+              <div class="materi">
+                <img src="../../assets/Icon/Curved/Materi.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Materi &#128900;<span class="pertemuan"> Pertemuan 5</span></p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Entity Relation Diagram</h3>
+                    <div style="display: flex; justify-content: center">Pelajari<img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">03 April 2024</p>
+                </div>
+              </div>
+            </div>
+            <div id="tugas-content" style="display: none">
+              <div class="tugas" style="margin-top: 0px">
+                <img src="../../assets/Icon/Curved/Tugas.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Tugas</p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Soal Pertemuan 13</h3>
+                    <div style="display: flex; justify-content: center">Lihat Tugas <img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
+              <div class="tugas">
+                <img src="../../assets/Icon/Curved/Tugas.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Tugas</p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Soal Pertemuan 11</h3>
+                    <div style="display: flex; justify-content: center">Lihat Tugas <img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
+              <div class="tugas">
+                <img src="../../assets/Icon/Curved/Tugas.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Tugas</p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Ujian Tengah Semester</h3>
+                    <div style="display: flex; justify-content: center">Lihat Tugas <img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">14 Mei 2024</p>
+                </div>
+              </div>
+              <div class="tugas">
+                <img src="../../assets/Icon/Curved/Tugas.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Tugas</p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Soal Pertemuan 06</h3>
+                    <div style="display: flex; justify-content: center">Lihat Tugas <img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
+              <div class="tugas">
+                <img src="../../assets/Icon/Curved/Tugas.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Tugas</p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Soal Pertemuan 04</h3>
+                    <div style="display: flex; justify-content: center">Lihat Tugas <img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
+                  <p style="color: #a5a5a5">17 Juni 2024</p>
+                </div>
+              </div>
+              <div class="tugas">
+                <img src="../../assets/Icon/Curved/Tugas.svg" alt="" style="margin-right: 16px" />
+                <div class="desc">
+                  <p>Tugas</p>
+                  <div class="mid-desc">
+                    <h3 class="judul">Soal Pertemuan 02</h3>
+                    <div style="display: flex; justify-content: center">Lihat Tugas <img src="../../assets/Icon/Curved/Arrow - Up.svg" alt="" style="margin-left: 4px" /></div>
+                  </div>
                   <p style="color: #a5a5a5">17 Juni 2024</p>
                 </div>
               </div>
             </div>
           </div>
-          <div id="right-content">
+          <div class="right-content">
             <div style="display: flex; justify-content: space-between; margin-bottom: 16px">
               <div class="lecture">
                 <p style="margin-bottom: 8px"><b>Pengajar</b></p>

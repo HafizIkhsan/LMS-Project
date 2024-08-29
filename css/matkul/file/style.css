@@ -233,11 +233,11 @@ div.background {
 }
 
 /* Sub-menu */
-.sub-menu {
+#sub-menu {
   margin: 32px 0px 0px 24px;
 }
 
-.sub-menu li {
+#sub-menu li {
   cursor: pointer;
   margin-right: 32px;
   font: 800 14px Plus Jakarta Sans;
@@ -250,16 +250,16 @@ div.background {
 }
 
 /* main-content */
-.main-content {
+#main-content {
   padding: 16px 40px;
   display: flex;
 }
 
-#left-content {
+.left-content {
   width: 60%;
 }
 
-#right-content {
+.right-content {
   width: 40%;
   padding: 0px 0px 0px 32px;
   box-sizing: border-box;
