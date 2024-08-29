@@ -4,3 +4,4 @@ import { container, batalkanButton } from "./textarea.js";
 import post from "./post.js";
 import comment from "./comment.js";
 import subMenu from "./content.js";
+import detail from "./file.js";

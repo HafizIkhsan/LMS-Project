@@ -209,7 +209,7 @@ div.background {
   height: 2px;
 }
 
-.hero {
+#hero {
   color: white;
   height: 15vh;
   background-color: #4662ad;
@@ -235,6 +235,7 @@ div.background {
 /* Sub-menu */
 #sub-menu {
   margin: 32px 0px 0px 24px;
+  display: inline-block;
 }
 
 #sub-menu li {
