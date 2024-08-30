@@ -88,32 +88,32 @@
                   <b>Fakultas</b> <br />
                   Ilmu Teknik dan Komputer
                 </li>
-                <div class="line"></div>
+                <div class="line-vertical"></div>
                 <li>
                   <b>Program Studi</b> <br />
                   Teknik Informatika
                 </li>
-                <div class="line"></div>
+                <div class="line-vertical"></div>
                 <li>
                   <b>Semester</b> <br />
                   4
                 </li>
-                <div class="line"></div>
+                <div class="line-vertical"></div>
                 <li>
                   <b>Mata Kuliah</b> <br />
                   8
                 </li>
-                <div class="line"></div>
+                <div class="line-vertical"></div>
                 <li>
                   <b>SKS</b> <br />
                   19
                 </li>
-                <div class="line"></div>
+                <div class="line-vertical"></div>
                 <li>
                   <b>Minggu ke</b> <br />
                   13/16
                 </li>
-                <div class="line"></div>
+                <div class="line-vertical"></div>
                 <li>
                   <b>Kelas</b> <br />
                   RX
@@ -216,45 +216,42 @@
               </ul>
             </div>
             <div class="bottom">
-              <div class="tugas">
-                <h3 style="margin: 0; margin-bottom: 16px">Tugas</h3>
+              <div class="tugas-content">
+                <div style="display: flex; justify-content: space-between">
+                  <h3 style="margin: 0; margin-bottom: 8px; display: inline">Tugas</h3>
+                  <a href="#" style="text-decoration: underline"><b>Lihat semua tugas</b></a>
+                </div>
                 <div class="tasks">
                   <ul style="padding: 0">
-                    <li>
-                      <a href="#">
-                        <div class="task-marker" style="background: #ff9431"></div>
-                        <div style="width: 100%">
-                          <div style="display: flex; justify-content: space-between">
-                            <p><b>Latihan Pertemuan 12</b></p>
-                            <p style="font: 400 10px Poppins">Tenggat: <b style="color: #ff3636">Hari ini</b></p>
-                          </div>
-                          <p>Aljabar Linier dan Matrik *)</p>
+                    <li class="tugas">
+                      <div class="task-marker" style="background: #ff9431"></div>
+                      <div style="width: 100%">
+                        <div style="display: flex; justify-content: space-between">
+                          <p><b>Latihan Pertemuan 12</b></p>
+                          <p style="font: 400 10px Poppins">Tenggat: <b style="color: #ff3636">Hari ini</b></p>
                         </div>
-                      </a>
+                        <p>Aljabar Linier dan Matrik *)</p>
+                      </div>
                     </li>
-                    <li>
-                      <a href="#">
-                        <div class="task-marker" style="background: #4eff31"></div>
-                        <div style="width: 100%">
-                          <div style="display: flex; justify-content: space-between">
-                            <p><b>Latihan Soal Pertemuan 12</b></p>
-                            <p style="font: 400 10px Poppins">Tenggat: <b style="color: #ffb936">Besok</b></p>
-                          </div>
-                          <p>Manajemen Proyek</p>
+                    <li class="tugas">
+                      <div class="task-marker" style="background: #4eff31"></div>
+                      <div style="width: 100%">
+                        <div style="display: flex; justify-content: space-between">
+                          <p><b>Latihan Soal Pertemuan 12</b></p>
+                          <p style="font: 400 10px Poppins">Tenggat: <b style="color: #ffb936">Besok</b></p>
                         </div>
-                      </a>
+                        <p>Manajemen Proyek</p>
+                      </div>
                     </li>
-                    <li>
-                      <a href="#">
-                        <div class="task-marker" style="background: rgb(100, 100, 100)"></div>
-                        <div style="width: 100%">
-                          <div style="display: flex; justify-content: space-between">
-                            <p><b>Latihan Soal</b></p>
-                            <p style="font: 400 10px Poppins">Tenggat: 02 Juli 2024</p>
-                          </div>
-                          <p>Sistem Basis Data *)</p>
+                    <li class="tugas">
+                      <div class="task-marker" style="background: rgb(100, 100, 100)"></div>
+                      <div style="width: 100%">
+                        <div style="display: flex; justify-content: space-between">
+                          <p><b>Soal Pertemuan 13</b></p>
+                          <p style="font: 400 10px Poppins">Tenggat: 02 Juli 2024</p>
                         </div>
-                      </a>
+                        <p>Sistem Basis Data *)</p>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -262,30 +259,36 @@
               <div class="materi">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 16px">
                   <h3>Materi hari ini</h3>
-                  <p>Pertemuan 13</p>
+                  <p id="pertemuan">Pertemuan 13</p>
                 </div>
                 <ul class="material-list">
                   <li class="material">
-                    <p>Aristektur dan Organisasi Komputer *)</p>
-                    <div style="display: flex; justify-content: space-between">
-                      <h3>Struktur Fungsi CPU</h3>
-                      <div class="pelajari" style="display: flex; align-items: center">
-                        <p>Pelajari</p>
-                        <img src="../assets/Icon/Curved/Arrow - Up.svg" alt="" />
+                    <img class="materi-img" src="../../assets/Icon/Curved/Document.svg" alt="" />
+                    <div style="width: 100%">
+                      <p class="matkul">Aristektur dan Organisasi Komputer *)</p>
+                      <div style="display: flex; justify-content: space-between">
+                        <h3>Struktur Fungsi CPU</h3>
+                        <div class="pelajari" style="display: flex; align-items: center">
+                          <p>Pelajari</p>
+                          <img src="../assets/Icon/Curved/Arrow - Up.svg" alt="" />
+                        </div>
                       </div>
+                      <p class="tanggal">17 Juni 2024</p>
                     </div>
-                    <p>25 Juni 2024</p>
                   </li>
                   <li class="material">
-                    <p>Aljabar Linier dan Matrik *)</p>
-                    <div style="display: flex; justify-content: space-between">
-                      <h3>Kombinasi Linier, Basis dan Dimensi</h3>
-                      <div class="pelajari" style="display: flex; align-items: center">
-                        <p>Pelajari</p>
-                        <img src="../assets/Icon/Curved/Arrow - Up.svg" alt="" />
+                    <img class="materi-img" src="../../assets/Icon/Curved/Document.svg" alt="" />
+                    <div style="width: 100%">
+                      <p class="matkul">Aljabar Linier dan Matrik *)</p>
+                      <div style="display: flex; justify-content: space-between">
+                        <h3>Kombinasi Linier, Basis dan Dimensi</h3>
+                        <div class="pelajari" style="display: flex; align-items: center">
+                          <p>Pelajari</p>
+                          <img src="../assets/Icon/Curved/Arrow - Up.svg" alt="" />
+                        </div>
                       </div>
+                      <p class="tanggal">17 Juni 2024</p>
                     </div>
-                    <p>25 Juni 2024</p>
                   </li>
                 </ul>
               </div>
@@ -357,7 +360,162 @@
         </div>
       </div>
     </section>
-    <!-- JS -->
+    <div id="background-popup"></div>
+
+    <div class="overlay" id="overlay-tugas">
+      <div id="heading">
+        <div class="left-side">
+          <img class="tugas-img" src="../assets/Icon/Curved/Tugas.svg" alt="" />
+        </div>
+        <div class="mid-right">
+          <div>
+            <h1 id="judul"></h1>
+            <p id="nm-dosen-tugas" style="display: inline"></p>
+            <p style="display: inline">&#128900;</p>
+            <p id="tanggal-tugas" style="display: inline"></p>
+          </div>
+          <div style="align-self: baseline; display: flex">
+            <img class="expand" src="../../assets/Icon/Light/Expand.svg" alt="" style="cursor: pointer; width: 20px; margin-right: 8px; opacity: 50%" />
+            <img class="close" style="cursor: pointer; opacity: 50%" src="../../assets/Icon/Light/Close_round_light.svg" />
+          </div>
+        </div>
+      </div>
+      <div id="inside">
+        <div class="left-side"></div>
+        <div class="middle-side">
+          <div class="line"></div>
+          <p>
+            Assalamualaikum Wr.Wb., <br />
+            Kerjakan soal latihan pertemuan 13 dengan ketentuan: <br />
+            1. Kerjakan dengan format: NPM_Nama_Soal Pertemuan... <br />
+            2. Mengumpulkan lebih dari tenggat waktu (Telat) tanpa penjelasan tidak saya nilai. <br /><br />
+            Terima kasih, jika ada yang ingin ditanyakan silahkan
+          </p>
+          <div style="display: flex; width: 16vw; margin-top: 16px">
+            <div class="preview" style="border: 1px solid #eaeaea; border-width: 1px 0px 1px 1px; padding: 16px; border-radius: 16px 0px 0px 16px; width: 40%"></div>
+            <div style="padding: 16px; border: 1px solid #eaeaea; border-width: 1px 1px 1px 1px; border-radius: 0px 16px 16px 0px; width: 80%">
+              <p><b>Soal pertemuan 13</b></p>
+              <p>Image</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="comments">
+            <div class="btn-allComments">
+              <button>
+                <img src="../../assets/Icon/Curved/3 User.svg" alt="" style="margin-right: 8px; width: 20px" />
+                <p><b>Lihat semua komentar</b></p>
+              </button>
+            </div>
+            <div class="comment">
+              <img src="../../assets/Profile-Pict/person-2.svg" alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
+              <div class="desc">
+                <div>
+                  <p style="color: #a5a5a5"><b style="color: black">2088 Nadia Suci</b> &#128900; 20 menit yang lalu</p>
+                  <p>Baik Pak</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment-person"></div>
+            <form class="comment">
+              <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
+              <textarea rows="1" class="comment-input" type="text" placeholder="Berikan komentar anda..."></textarea>
+              <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
+            </form>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="tenggat">
+            <p>Tenggat: 2 Juli 2024</p>
+            <p>Point: 100 point</p>
+          </div>
+          <div class="box-tugas">
+            <div style="display: flex; justify-content: space-between">
+              <h3>Tugas</h3>
+              <p><b>Ditugaskan</b></p>
+            </div>
+            <button class="add">+ Tambah tugas</button>
+            <button class="submit">Kumpulkan</button>
+          </div>
+
+          <div class="priv-comment">
+            <div style="padding: 8px 0px; display: flex; font: 600 10px Plus Jakarta Sans; color: #a5a5a5">
+              <img src="../../assets/Icon/Curved/Profile.svg" alt="" style="margin-right: 8px; width: 16px" />
+              <p style="align-self: center"><b>Komentar pribadi</b></p>
+            </div>
+            <div class="comment-person"></div>
+            <form class="comment priv">
+              <textarea rows="1" style="font: 400 10px Plus Jakarta Sans" class="comment-input" type="text" placeholder="Berikan komentar anda..."></textarea>
+              <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" style="width: 20px" /></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay-materi">
+      <div id="heading">
+        <div class="left-side">
+          <img id="materi-img" src="../../assets/Icon/Curved/Document.svg" alt="" />
+        </div>
+        <div class="mid-right">
+          <div>
+            <p id="pertemuan-materi"></p>
+            <div class="judul-materi" style="display: flex">
+              <h1 id="judul"></h1>
+            </div>
+            <p id="nm-dosen-materi" style="display: inline"></p>
+            <p style="display: inline">&#128900;</p>
+            <p id="tanggal-materi" style="display: inline"></p>
+          </div>
+          <div style="align-self: baseline; display: flex">
+            <img class="expand" src="../../assets/Icon/Light/Expand.svg" alt="" style="cursor: pointer; width: 20px; margin-right: 8px; opacity: 50%" />
+            <img class="close" style="cursor: pointer; opacity: 50%" src="../../assets/Icon/Light/Close_round_light.svg" />
+          </div>
+        </div>
+      </div>
+      <div id="inside">
+        <div class="left-side"></div>
+        <div class="middle-side">
+          <div class="line"></div>
+          <p>
+            Assalamualaikum Wr.Wb., <br />
+            Berikut materi untuk perkuliahan hari ini:
+          </p>
+          <div style="display: flex; width: 16vw; margin-top: 16px">
+            <div class="preview" style="border: 1px solid #eaeaea; border-width: 1px 0px 1px 1px; padding: 16px; border-radius: 16px 0px 0px 16px; width: 40%"></div>
+            <div style="padding: 16px; border: 1px solid #eaeaea; border-width: 1px 1px 1px 1px; border-radius: 0px 16px 16px 0px; width: 80%">
+              <p><b>Query By Example</b></p>
+              <p>PDF</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="comments">
+            <div class="btn-allComments">
+              <button>
+                <img src="../../assets/Icon/Curved/3 User.svg" alt="" style="margin-right: 8px; width: 20px" />
+                <p><b>Lihat semua komentar</b></p>
+              </button>
+            </div>
+            <div class="comment">
+              <img src="../../assets/Profile-Pict/person-2.svg" alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
+              <div class="desc">
+                <div>
+                  <p style="color: #a5a5a5"><b style="color: black">2088 Nadia Suci</b> &#128900; 20 menit yang lalu</p>
+                  <p>Baik Pak</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment-person"></div>
+            <form class="comment">
+              <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 0px 16px 0px 0px; border-radius: 24px" />
+              <input class="comment-input" type="text" placeholder="Berikan komentar anda..." />
+              <button style="margin: 0px 8px; display: flex; align-items: center"><img src="../../assets/Icon/Curved/Send.svg" alt="" /></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="../js/dashboard/script.js" defer></script>
   </body>
 </html>

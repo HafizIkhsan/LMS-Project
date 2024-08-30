@@ -106,4 +106,4 @@ expand.forEach(function (e) {
     }
   });
 });
-export { tugas, materi, background, close };
+export { tugas, materi, background, close, expand, judul };

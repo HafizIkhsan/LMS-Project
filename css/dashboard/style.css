@@ -29,6 +29,14 @@ button {
   cursor: pointer;
 }
 
+textarea {
+  resize: none;
+}
+
+textarea:focus-visible {
+  outline: 2px solid #0c2577;
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -204,6 +212,7 @@ div.background h1 {
 .pengumuman {
   padding: 16px;
   border-radius: 16px;
+  border: 1px solid #eaeaea;
   background: #ff2a2a;
   color: white;
 }
@@ -212,6 +221,7 @@ div.background h1 {
 .status {
   margin-top: 16px;
   background: white;
+  border: 1px solid #eaeaea;
   border-radius: 16px;
   padding: 16px;
 }
@@ -241,7 +251,7 @@ div.background h1 {
   margin-right: 24px;
 }
 
-.line {
+.line-vertical {
   border-left: 1.5px solid #c7c7c7;
   height: 39px;
 }
@@ -251,6 +261,7 @@ div.background h1 {
   margin-top: 16px;
   padding: 16px;
   background: white;
+  border: 1px solid #eaeaea;
   border-radius: 16px;
   height: 31vh;
 }
@@ -336,9 +347,10 @@ div.background h1 {
 }
 
 /* Tugas */
-.tugas {
+.tugas-content {
   min-width: 37%;
   padding: 16px;
+  border: 1px solid #eaeaea;
   background: white;
   border-radius: 16px;
   margin-right: 16px;
@@ -349,14 +361,11 @@ div.background h1 {
   display: block;
 }
 
-.tasks li {
+.tugas {
   background: rgb(215, 215, 215, 13%);
   border-radius: 16px;
   padding: 0px 24px 0px 0px;
   margin: 8px 0px;
-}
-
-.tasks a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -374,15 +383,9 @@ div.background h1 {
   width: 60%;
   height: 64vh;
   background: white;
+  border: 1px solid #eaeaea;
   border-radius: 16px;
   padding: 16px;
-}
-
-.matkul {
-  padding: 16px;
-  background: rgb(215, 215, 215, 13%);
-  width: 100%;
-  border-radius: 16px;
 }
 
 ul.material-list {
@@ -394,6 +397,14 @@ li.material {
   border-radius: 16px;
   padding: 16px;
   margin: 16px 0px;
+  display: flex;
+  align-items: center;
+}
+
+li.material:hover,
+.tugas:hover {
+  cursor: pointer;
+  background: #e9e9e9;
 }
 
 .material p {
@@ -417,6 +428,7 @@ li.material {
   max-width: 100%;
   height: 60vh;
   padding: 16px;
+  border: 1px solid #eaeaea;
   border-radius: 16px;
 }
 
@@ -488,6 +500,7 @@ li.material {
 .zoom {
   max-width: 100%;
   padding: 16px;
+  border: 1px solid #eaeaea;
   border-radius: 16px;
   background: white;
   margin-top: 16px;
@@ -558,8 +571,201 @@ li.material {
   }
 }
 
-.tugas,
 .materi,
 .zoom {
   height: 30vh;
+}
+
+/* overlay */
+/* overlay tugas */
+#background-popup {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 25%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 98;
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  background: white;
+  width: 80%;
+  padding: 32px 32px;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: default;
+  z-index: 99;
+  display: none;
+}
+
+#overlay-tugas.full,
+#overlay-materi.full {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+#heading {
+  width: 100%;
+  display: flex;
+}
+
+.close:hover,
+.expand:hover {
+  opacity: 100% !important;
+}
+
+.left-side {
+  width: 3%;
+  align-self: center;
+}
+
+.mid-right {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+}
+
+#inside {
+  display: flex;
+}
+
+/* middle-side */
+.middle-side {
+  width: 100%;
+  padding: 0px 24px;
+}
+
+.right-side {
+  width: 40%;
+}
+
+.btn-allComments button:hover {
+  background: #f8f8f8;
+}
+
+.btn-allComments button {
+  border-radius: 16px;
+  padding: 4px 8px;
+  font: 600 10px Plus Jakarta Sans;
+  display: flex;
+  color: #a5a5a5;
+  align-items: center;
+}
+
+/* Right-side */
+.tenggat {
+  display: flex;
+  justify-content: space-between;
+  font: 600 10px Plus Jakarta Sans;
+  padding: 0px 4px;
+}
+
+.box-tugas {
+  margin-top: 8px;
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.add {
+  margin-top: 24px;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: white;
+  font: 600 12px Plus Jakarta Sans;
+}
+
+.add:hover {
+  color: #342f2f;
+  border: 1px solid #0c2577;
+}
+
+.submit {
+  margin-top: 4px;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: #4662ad;
+  color: white;
+  font: 600 12px Plus Jakarta Sans;
+}
+
+.submit:hover {
+  background-color: #203776;
+  color: white;
+}
+
+.priv-comment {
+  margin-top: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: white;
+  font: 600 12px Plus Jakarta Sans;
+}
+
+.input-comment {
+  display: flex;
+}
+
+.input-comment input {
+  font: 400 10px Plus Jakarta Sans;
+}
+
+.line {
+  margin: 12px 0px;
+  border-bottom: 1.5px solid #eaeaea;
+  width: 100%;
+  height: 2px;
+}
+
+.preview {
+  width: 30%;
+  background-image: url(../../../assets/pdf/A4\ -\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
+}
+
+.comment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.comment-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font: 400 12px Plus Jakarta Sans;
+}
+
+.materi-img,
+#materi-img,
+.tugas-img {
+  border-radius: 10px;
+  margin-right: 16px;
+  height: 5vh;
 }
