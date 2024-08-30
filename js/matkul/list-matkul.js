@@ -20,6 +20,12 @@ arsikom.addEventListener("click", () => {
   dayTime(arsikom);
   color(arsikom);
 });
+aljabar.addEventListener("click", () => {
+  subject(aljabar);
+  lecture(aljabar);
+  dayTime(aljabar);
+  color(aljabar);
+});
 manpro.addEventListener("click", () => {
   subject(manpro);
   lecture(manpro);
@@ -74,9 +80,7 @@ let color = (e) => {
   let div = e.querySelector(".top");
   const styleAtt = div.getAttribute("style");
   const bgColor = styleAtt.split(":").pop();
-  // let bgColor = window.getComputedStyle(styleAtt).backgroundColor;
   localStorage.setItem("bgColor", bgColor);
-  console.log(bgColor);
 };
 
 export default sbd;

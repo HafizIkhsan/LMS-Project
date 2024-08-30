@@ -214,6 +214,8 @@ div.background h1 {
   padding: 0px 16px;
   height: 6vh;
   margin-top: 16px;
+  font: 300 10px Plus Jakarta Sans;
+  text-decoration: underline;
 }
 
 .homework ul li {

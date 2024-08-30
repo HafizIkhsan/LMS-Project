@@ -245,7 +245,7 @@ div.background {
 }
 
 .active-submenu {
-  border-bottom: 4px solid #0c2577;
+  border-bottom: 4px solid;
   border-radius: 4px;
 }
 
@@ -358,6 +358,14 @@ div.background {
   background-color: white;
   border: 1px solid #eaeaea;
   border-radius: 16px;
+  align-items: center;
+}
+
+.materi-img,
+.tugas-img {
+  border-radius: 10px;
+  margin-right: 16px;
+  height: 5vh;
 }
 
 .desc {
