@@ -245,7 +245,6 @@ div.background {
 }
 
 .active-submenu {
-  border-bottom: 4px solid;
   border-radius: 4px;
 }
 
@@ -626,7 +625,7 @@ td {
 .tenggat {
   display: flex;
   justify-content: space-between;
-  font: 400 10px Plus Jakarta Sans;
+  font: 600 10px Plus Jakarta Sans;
   padding: 0px 4px;
 }
 

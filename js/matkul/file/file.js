@@ -28,7 +28,7 @@ iconTugas.forEach((e) => {
 
 let iconActive = document.querySelectorAll(".active-submenu");
 iconActive.forEach((e) => {
-  e.style.borderColor = bgColor;
+  e.style.borderBottom = `4px solid ${bgColor}`;
 });
 
 document.getElementById("picLecture").setAttribute("src", `../../assets/Profile-Pict/dosen/${lecturePhoto}`);

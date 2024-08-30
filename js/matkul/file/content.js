@@ -4,6 +4,7 @@ const tugas = document.getElementById("tugas-content");
 const forumSubMenu = document.getElementById("forum");
 const materiSubMenu = document.getElementById("materi");
 const tugasSubMenu = document.getElementById("tugas");
+const bgColor = localStorage.getItem("bgColor");
 
 forumSubMenu.addEventListener("click", () => {
   // Reset all submenu active classes
@@ -14,7 +15,10 @@ forumSubMenu.addEventListener("click", () => {
   forum.style.display = "block";
   materi.style.display = "none";
   tugas.style.display = "none";
-  console.log("forum");
+
+  forumSubMenu.style.borderBottom = `4px solid ${bgColor}`;
+  materiSubMenu.style.borderBottom = `none`;
+  tugasSubMenu.style.borderBottom = `none`;
 });
 
 materiSubMenu.addEventListener("click", () => {
@@ -25,7 +29,10 @@ materiSubMenu.addEventListener("click", () => {
   forum.style.display = "none";
   materi.style.display = "block";
   tugas.style.display = "none";
-  console.log("materi");
+
+  forumSubMenu.style.borderBottom = `none`;
+  materiSubMenu.style.borderBottom = `4px solid ${bgColor}`;
+  tugasSubMenu.style.borderBottom = `none`;
 });
 
 tugasSubMenu.addEventListener("click", () => {
@@ -36,7 +43,10 @@ tugasSubMenu.addEventListener("click", () => {
   forum.style.display = "none";
   materi.style.display = "none";
   tugas.style.display = "block";
-  console.log("tugas");
+
+  forumSubMenu.style.borderBottom = `none`;
+  materiSubMenu.style.borderBottom = `none`;
+  tugasSubMenu.style.borderBottom = `4px solid ${bgColor}`;
 });
 
 export { forumSubMenu, materiSubMenu, tugasSubMenu };
