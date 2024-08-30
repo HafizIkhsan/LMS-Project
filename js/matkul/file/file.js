@@ -16,7 +16,7 @@ matkul.forEach((e) => {
   e.innerHTML = subjectName;
 });
 
-document.getElementById("picLecture").setAttribute("src", `../../assets/Profile-Pict/${lecturePhoto}`);
+document.getElementById("picLecture").setAttribute("src", `../../assets/Profile-Pict/dosen/${lecturePhoto}`);
 
 document.getElementById("tgl").innerHTML = `${day}, ${time}`;
 document.getElementById("dosen").innerHTML = lectureName;

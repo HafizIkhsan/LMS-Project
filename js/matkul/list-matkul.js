@@ -8,19 +8,41 @@ sbd.addEventListener("click", () => {
   dayTime(sbd);
   color(sbd);
 });
-
 psbd.addEventListener("click", () => {
   subject(psbd);
   lecture(psbd);
   dayTime(psbd);
   color(psbd);
 });
-
 arsikom.addEventListener("click", () => {
   subject(arsikom);
   lecture(arsikom);
   dayTime(arsikom);
   color(arsikom);
+});
+manpro.addEventListener("click", () => {
+  subject(manpro);
+  lecture(manpro);
+  dayTime(manpro);
+  color(manpro);
+});
+numerik.addEventListener("click", () => {
+  subject(numerik);
+  lecture(numerik);
+  dayTime(numerik);
+  color(numerik);
+});
+sejarah.addEventListener("click", () => {
+  subject(sejarah);
+  lecture(sejarah);
+  dayTime(sejarah);
+  color(sejarah);
+});
+fisika.addEventListener("click", () => {
+  subject(fisika);
+  lecture(fisika);
+  dayTime(fisika);
+  color(fisika);
 });
 
 let dayTime = (e) => {
