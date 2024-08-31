@@ -22,7 +22,7 @@ material.forEach((e) => {
     // nama Dosen & warna
     if (matkul.innerHTML === "Aristektur dan Organisasi Komputer *)") {
       iconColor(100, 100, 100);
-      document.getElementById("nm-dosen-materi").innerHTML = "<b>Muhammad Sobari M.Kom</b>";
+      document.getElementById("nm-dosen-materi").innerHTML = "<b>Bambang Yudho M.Kom</b>";
     } else if (matkul.innerHTML === "Aljabar Linier dan Matrik *)") {
       iconColor(255, 148, 49);
       document.getElementById("nm-dosen-materi").innerHTML = "<b>Nur Laeli M.Si</b>";
