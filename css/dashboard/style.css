@@ -194,6 +194,12 @@ div.background {
 div.background h1 {
   margin: 0;
   color: black;
+  font: 800 36px Plus Jakarta Sans;
+  letter-spacing: -0.5px;
+}
+
+.section {
+  display: flex;
 }
 
 .container {
@@ -215,6 +221,16 @@ div.background h1 {
   border: 1px solid #eaeaea;
   background: #ff2a2a;
   color: white;
+}
+
+.pengumuman h3 {
+  margin: 0 0 4px 0;
+  font: 600 16px Plus Jakarta Sans;
+}
+
+.pengumuman p {
+  margin: 0;
+  font: 400 12px/150% Plus Jakarta Sans;
 }
 
 /* Status */
@@ -264,6 +280,11 @@ div.background h1 {
   border: 1px solid #eaeaea;
   border-radius: 16px;
   /* height: 31vh; */
+}
+
+div.on-going h1 {
+  font: 600 24px Poppins;
+  margin-bottom: 16px;
 }
 
 .class {
@@ -770,4 +791,113 @@ li.material:hover,
   border-radius: 10px;
   margin-right: 16px;
   height: 5vh;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 0px;
+  }
+
+  div.background {
+    border-radius: 16px 16px 0px 0px;
+    padding: 16px;
+  }
+
+  div.background h1 {
+    font-size: 24px;
+  }
+
+  .section {
+    display: block;
+  }
+
+  .container.main-right,
+  .status {
+    display: none;
+  }
+
+  .main-left {
+    padding: 8px 0px;
+    width: 100%;
+  }
+
+  .pengumuman {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .pengumuman h3 {
+    font: 600 12px Plus Jakarta Sans;
+  }
+
+  .pengumuman p {
+    text-align: justify;
+    font: 400 10px Plus Jakarta Sans;
+  }
+
+  .on-going {
+    padding: 16px;
+    /* overlay: scroll; */
+  }
+
+  div.on-going h1 {
+    font: 800 24px Plus Jakarta Sans;
+    margin-bottom: 8px;
+  }
+
+  .on-going ul {
+    overflow-x: scroll;
+  }
+
+  .class {
+    margin-right: 16px;
+    min-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .class.active {
+    min-width: 90%;
+  }
+
+  .content {
+    padding: 8px;
+  }
+
+  div.schedule p,
+  div.about p {
+    font: 400 10px Plus Jakarta Sans;
+    width: auto;
+    margin: 2px 0px;
+  }
+
+  .content p {
+    font: 600 14px Plus Jakarta Sans;
+    letter-spacing: -1px;
+  }
+
+  .h-line {
+    margin: 8px 0px;
+  }
+
+  div.bottom-class {
+    display: block;
+  }
+
+  .profile-dosen {
+    margin: 0px;
+    margin-bottom: 8px;
+  }
+
+  .profile-dosen img {
+    width: 40px;
+    margin-right: 16px;
+  }
+
+  .active .berlangsung {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
 }
