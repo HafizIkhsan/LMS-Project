@@ -259,11 +259,11 @@ div.background h1 {
 /* Class */
 .on-going {
   margin-top: 16px;
-  padding: 16px;
+  padding: 16px 16px 32px 16px;
   background: white;
   border: 1px solid #eaeaea;
   border-radius: 16px;
-  height: 31vh;
+  /* height: 31vh; */
 }
 
 .class {
@@ -276,14 +276,16 @@ div.background h1 {
 
 .class.active {
   width: 24vw;
+  box-shadow: 0px 4px 4px 1px rgb(224, 224, 224, 80%);
 }
 
 .class.active:nth-of-type(3) {
   width: 20vw;
+  box-shadow: 0px 4px 4px 1px rgb(224, 224, 224, 20%);
 }
 
 .content {
-  padding: 16px;
+  padding: 8px 16px 16px 16px;
 }
 
 .on-going.active {
@@ -384,7 +386,7 @@ div.background h1 {
 /* Materi */
 .materi {
   width: 60%;
-  height: 64vh;
+  height: 30vh;
   background: white;
   border: 1px solid #eaeaea;
   border-radius: 16px;
@@ -574,11 +576,6 @@ li.material:hover,
     top: -20px;
     color: red;
   }
-}
-
-.materi,
-.zoom {
-  height: 30vh;
 }
 
 /* overlay */
