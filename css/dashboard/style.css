@@ -270,7 +270,8 @@ div.background h1 {
   width: 20vw;
   border-radius: 16px;
   background: white;
-  box-shadow: 0px 4px 4px 1px rgb(224, 224, 224, 66%);
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 4px 4px 1px rgb(224, 224, 224, 20%);
 }
 
 .class.active {
@@ -354,7 +355,7 @@ div.background h1 {
   background: white;
   border-radius: 16px;
   margin-right: 16px;
-  height: min-content;
+  height: 30vh;
 }
 
 .tasks ul {
@@ -369,6 +370,8 @@ div.background h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 4px 4px 1px rgb(224, 224, 224, 20%);
 }
 
 .task-marker {
@@ -399,6 +402,8 @@ li.material {
   margin: 16px 0px;
   display: flex;
   align-items: center;
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 4px 4px 1px rgb(224, 224, 224, 40%);
 }
 
 li.material:hover,
