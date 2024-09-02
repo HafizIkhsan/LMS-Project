@@ -309,6 +309,15 @@ div.on-going h1 {
   padding: 8px 16px 16px 16px;
 }
 
+.schedule p,
+.about p {
+  font: 400 10px Plus Jakarta Sans;
+}
+
+.matkul-ongoing {
+  font: 800 14px Plus Jakarta Sans;
+}
+
 .on-going.active {
   min-width: 40%;
   box-shadow: 0px 4px 4px 1px rgb(70, 98, 173, 44%);
@@ -811,7 +820,9 @@ li.material:hover,
     display: block;
   }
 
-  .container.main-right,
+  .container.main-right {
+    display: block;
+  }
   .status {
     display: none;
   }
@@ -843,7 +854,7 @@ li.material:hover,
   }
 
   div.on-going h1 {
-    font: 800 24px Plus Jakarta Sans;
+    font: 800 20px/120% Plus Jakarta Sans;
     margin-bottom: 8px;
   }
 
@@ -855,6 +866,7 @@ li.material:hover,
     margin-right: 16px;
     min-width: 100%;
     margin-bottom: 16px;
+    height: 100%;
   }
 
   .class.active {
@@ -870,6 +882,7 @@ li.material:hover,
     font: 400 10px Plus Jakarta Sans;
     width: auto;
     margin: 2px 0px;
+    letter-spacing: normal;
   }
 
   .content p {
@@ -881,23 +894,69 @@ li.material:hover,
     margin: 8px 0px;
   }
 
-  div.bottom-class {
-    display: block;
-  }
-
   .profile-dosen {
     margin: 0px;
     margin-bottom: 8px;
   }
 
   .profile-dosen img {
-    width: 40px;
+    width: 32px;
     margin-right: 16px;
   }
 
+  .profile-dosen .data p {
+    font: 400 12px Plus Jakarta Sans;
+    letter-spacing: normal;
+  }
+
   .active .berlangsung {
-    width: 100%;
     box-sizing: border-box;
     text-align: center;
+  }
+
+  .active .berlangsung p {
+    font: 600 10px Plus Jakarta Sans;
+    letter-spacing: -0.5px;
+  }
+
+  .bottom {
+    display: block;
+  }
+
+  .tugas-content {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+  .materi {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  .on-going ul::-webkit-scrollbar {
+    height: 6px;
+    /* border-radius: 6px; */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #a5a5a5;
+    border-radius: 16px;
+  }
+
+  .main-right {
+    width: 100%;
+  }
+
+  .calendar {
+    display: none;
+  }
+
+  .zoom {
+    margin: 0px;
   }
 }
