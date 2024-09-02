@@ -48,6 +48,10 @@ textarea:focus-visible {
   align-self: center;
 }
 
+.header-mobile {
+  display: none;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -803,15 +807,95 @@ li.material:hover,
 }
 
 @media screen and (max-width: 600px) {
-  html {
-    height: 100%;
-    overflow: hidden;
-  }
-
   .main {
     padding: 0px;
   }
+  /* Header */
+  .header {
+    display: none;
+  }
 
+  .header-mobile {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  #hamburger {
+    margin-right: 24px;
+    cursor: pointer;
+  }
+
+  .line-hamburger {
+    width: 16px;
+    height: 2px;
+    background: #342f2f;
+    margin: 2px;
+  }
+
+  #sidePanel {
+    padding: 16px;
+    position: fixed;
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    z-index: 999;
+    left: 0px;
+    top: 0px;
+    display: block;
+  }
+
+  #profile {
+    align-items: center;
+    display: flex;
+    border: none;
+  }
+
+  #profile:hover {
+    cursor: default;
+    box-shadow: none;
+  }
+
+  #sidePanel ul {
+    display: block;
+  }
+
+  #sidePanel ul li {
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 24px;
+  }
+
+  #sidePanel ul li a {
+    padding: 16px;
+  }
+
+  #notification {
+    margin-right: 0;
+    background-color: #fafafa;
+    border-radius: 12px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #notification div {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Main */
   div.background {
     border-radius: 16px 16px 0px 0px;
     padding: 16px;
@@ -910,7 +994,7 @@ li.material:hover,
   }
 
   .profile-dosen .data p {
-    font: 400 12px Plus Jakarta Sans;
+    font: 400 10px Plus Jakarta Sans;
     letter-spacing: normal;
   }
 
