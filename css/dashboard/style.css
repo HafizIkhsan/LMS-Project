@@ -803,10 +803,13 @@ li.material:hover,
 }
 
 @media screen and (max-width: 600px) {
-  .main {
-    overflow: hidden;
-    padding: 0px;
+  html {
     height: 100%;
+    overflow: hidden;
+  }
+
+  .main {
+    padding: 0px;
   }
 
   div.background {
