@@ -874,25 +874,34 @@ li.material:hover,
     border-radius: 16px;
   }
 
-  #sidePanel ul li:hover {
-    background-color: #f8f8f8;
+  #sidePanel ul li a:hover,
+  .profile-menu li a button:hover {
+    background: #f8f8f8;
     color: #a5a5a5;
   }
 
-  #sidePanel ul.menubar li a {
+  #sidePanel ul.menubar li a,
+  .profile-menu li a button {
     display: flex;
     padding: 16px;
     width: 100%;
     border-radius: 16px;
     box-sizing: border-box;
     align-items: center;
+    color: #a5a5a5;
+    font: 400 12px Plus Jakarta Sans;
   }
 
-  .profile-menu li a button {
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    font: 400 12px Plus Jakarta Sans;
+  #sidePanel ul.menubar li.active-menu a {
+    background-color: #0c2577;
+    color: white;
+    font-weight: 600;
+  }
+
+  #sidePanel ul.menubar li.active-menu a:hover {
+    background-color: #0c2577;
+    color: white;
+    font-weight: 600;
   }
 
   .profile-menu li a button img {
@@ -942,7 +951,7 @@ li.material:hover,
   }
 
   .main-left {
-    padding: 8px 0px;
+    padding: 8px 0px 0px 0px;
     width: 100%;
   }
 
@@ -964,7 +973,6 @@ li.material:hover,
 
   .on-going {
     padding: 16px;
-    /* overlay: scroll; */
   }
 
   div.on-going h1 {
@@ -1002,10 +1010,6 @@ li.material:hover,
   .content p {
     font: 600 14px Plus Jakarta Sans;
     letter-spacing: -1px;
-  }
-
-  .h-line {
-    margin: 8px 0px;
   }
 
   .profile-dosen {
@@ -1050,7 +1054,6 @@ li.material:hover,
 
   .on-going ul::-webkit-scrollbar {
     height: 6px;
-    /* border-radius: 6px; */
   }
 
   ::-webkit-scrollbar-track {
