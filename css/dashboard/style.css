@@ -1056,11 +1056,12 @@ li.material:hover,
     height: 6px;
   }
 
-  ::-webkit-scrollbar-track {
+  .on-going ul::-webkit-scrollbar-track {
     background: #f1f1f1;
+    border-radius: 16px;
   }
 
-  ::-webkit-scrollbar-thumb {
+  .on-going ul::-webkit-scrollbar-thumb {
     background: #a5a5a5;
     border-radius: 16px;
   }

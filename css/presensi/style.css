@@ -4,7 +4,7 @@
 html,
 body {
   margin: 0;
-  min-height: 100%;
+  height: 100%;
   font: 400 12px Plus Jakarta Sans;
 }
 
@@ -237,7 +237,7 @@ table {
 .tuple td {
   font-size: 12px;
   font-weight: 400;
-  padding: 20px 16px;
+  padding: 8px 16px;
   border: 2px solid #eaeaea;
   border-width: 2px 0px 2px 0px;
 }
@@ -361,8 +361,17 @@ img#close:hover {
   height: 2px;
 }
 
+.presentase {
+  width: 12%;
+  text-align: start;
+  padding: 8px;
+}
+
 @media screen and (max-width: 600px) {
-  html,
+  html {
+    min-height: 100%;
+  }
+
   body {
     min-height: 100%;
   }
@@ -506,7 +515,7 @@ img#close:hover {
     border: 1px solid #eaeaea;
   }
 
-  .container div {
+  .container #classes {
     padding-bottom: 16px;
     overflow-x: scroll;
   }
@@ -519,7 +528,6 @@ img#close:hover {
 
   .tuple td {
     font: 400 10px Plus Jakarta Sans;
-    width: 100%;
     padding: 4px;
   }
 
@@ -534,6 +542,22 @@ img#close:hover {
   .container div::-webkit-scrollbar-thumb {
     background: #a5a5a5;
     border-radius: 16px;
+  }
+
+  .presentase {
+    width: 12%;
+    text-align: start;
+    padding: 4px;
+  }
+
+  .kd-mk,
+  .jadwal,
+  .presentase {
+    min-width: 70px;
+  }
+
+  .matkul {
+    min-width: 100px;
   }
 
   /* pop-up */
