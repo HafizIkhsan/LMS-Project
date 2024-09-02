@@ -377,7 +377,7 @@
     <div id="background-popup"></div>
 
     <div class="sidePanel" id="sidePanel">
-      <button style="width: 100%; text-align: end; font: 600 24px Plus Jakarta Sans; color: #a5a5a5">x</button>
+      <button style="width: 100%; text-align: end; font: 600 24px Plus Jakarta Sans; color: #a5a5a5"><img id="close-side" class="close" style="cursor: pointer; opacity: 50%" src="../assets/Icon/Light/Close_round_light.svg" /></button>
       <div class="h-line"></div>
       <div id="profile">
         <img src="../assets/Profile-Pict/kwekkwek.jpeg" alt="profile-img" style="width: 40px; height: 40px; margin: 8px 8px 8px 4px; border-radius: 24px" />
@@ -387,12 +387,45 @@
         </div>
       </div>
       <div class="h-line"></div>
-      <ul>
-        <li class="active-menu"><a href="./dashboard.html">Dashboard</a></li>
-        <li><a href="./presensi.html">Presensi</a></li>
-        <li><a href="./list-matkul.html">Mata Kuliah</a></li>
+      <ul class="menubar">
+        <li class="active-menu">
+          <a href="#dashboard"><img src="../assets/Icon/Filled/Category 2.svg" alt="" style="margin-right: 12px; width: 20px" />Dashboard</a>
+        </li>
+        <li>
+          <a href="./presensi.html"><img src="../assets/Icon/Light/Calendar.svg" alt="" style="margin-right: 12px; width: 20px" />Presensi</a>
+        </li>
+        <li>
+          <a href="./list-matkul.html"><img src="../assets/Icon/Light/Case.svg" alt="" style="margin-right: 12px; width: 20px" />Mata Kuliah</a>
+        </li>
       </ul>
       <div class="h-line"></div>
+      <ul class="profile-menu">
+        <li>
+          <a href="#">
+            <button>
+              <img src="../assets/Icon/Light/User.svg" alt="" />
+              <p>Profil</p>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <button>
+              <img src="../assets/Icon/Light/Settings.svg" alt="" />
+              <p>Pengaturan</p>
+            </button>
+          </a>
+        </li>
+        <div class="h-line"></div>
+        <li>
+          <a href="../index.html" s>
+            <button>
+              <img src="../assets/Icon/Light/Logout.svg" alt="" />
+              <p style="color: #ff3636">Keluar</p>
+            </button>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div class="overlay" id="overlay-tugas">

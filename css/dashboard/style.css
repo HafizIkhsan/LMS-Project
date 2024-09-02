@@ -182,6 +182,10 @@ ul.profile-section {
   margin-right: 16px;
 }
 
+#sidePanel {
+  display: none;
+}
+
 /* Main */
 .main {
   padding: 0px 32px;
@@ -846,7 +850,7 @@ li.material:hover,
     z-index: 999;
     left: 0px;
     top: 0px;
-    display: block;
+    display: none;
   }
 
   #profile {
@@ -867,11 +871,32 @@ li.material:hover,
   #sidePanel ul li {
     box-sizing: border-box;
     padding: 8px;
-    margin: 24px;
+    border-radius: 16px;
   }
 
-  #sidePanel ul li a {
+  #sidePanel ul li:hover {
+    background-color: #f8f8f8;
+    color: #a5a5a5;
+  }
+
+  #sidePanel ul.menubar li a {
+    display: flex;
     padding: 16px;
+    width: 100%;
+    border-radius: 16px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .profile-menu li a button {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    font: 400 12px Plus Jakarta Sans;
+  }
+
+  .profile-menu li a button img {
+    margin-right: 8px;
   }
 
   #notification {
