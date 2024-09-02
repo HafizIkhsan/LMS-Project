@@ -487,6 +487,10 @@ img#close:hover {
     background: white;
     border-radius: 16px;
     border: 1px solid #eaeaea;
+  }
+
+  .container div {
+    padding-bottom: 16px;
     overflow-x: scroll;
   }
 
@@ -496,15 +500,20 @@ img#close:hover {
     padding: 4px;
   }
 
-  .container::-webkit-scrollbar {
+  .tuple td {
+    font: 400 10px Plus Jakarta Sans;
+    width: 100%;
+  }
+
+  .container div::-webkit-scrollbar {
     height: 6px;
   }
 
-  ::-webkit-scrollbar-track {
+  .container div::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
 
-  ::-webkit-scrollbar-thumb {
+  .container div::-webkit-scrollbar-thumb {
     background: #a5a5a5;
     border-radius: 16px;
   }
@@ -522,6 +531,10 @@ img#close:hover {
   #pop-up .desc {
     display: block;
     margin: 0px 8px;
+  }
+
+  #pop-up .desc div {
+    margin-bottom: 8px;
   }
 
   #pop-up table {
