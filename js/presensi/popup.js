@@ -11,7 +11,7 @@ const kls = document.getElementsByClassName('kls');
 const hari = document.getElementsByClassName('hari');
 const jadwal = document.getElementsByClassName('jadwal');
 const ruangan = document.getElementsByClassName('ruangan');
-
+const body = document.body;
 
 tuple.forEach(function(tuple, index){
     tuple.addEventListener('click',function(){
@@ -26,7 +26,7 @@ tuple.forEach(function(tuple, index){
         document.getElementById('jdwl').innerHTML = day.innerHTML +', '+ schedule.innerHTML +' & '+ room.innerHTML;
         overlay.style.display = 'block';
         background.style.display = 'block';
-
+        body.style.overlay = 'hidden';
     });
 });
 
