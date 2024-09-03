@@ -378,7 +378,6 @@ img#close:hover {
 
   .main {
     padding: 0px;
-    min-height: 100%;
   }
 
   /* Header */
@@ -500,7 +499,7 @@ img#close:hover {
   div.background {
     border-radius: 16px 16px 0px 0px;
     padding: 16px;
-    min-height: 100%;
+    height: auto;
   }
 
   div.background h1 {
@@ -528,7 +527,7 @@ img#close:hover {
 
   .tuple td {
     font: 400 10px Plus Jakarta Sans;
-    padding: 4px;
+    padding: 16px;
   }
 
   .container div::-webkit-scrollbar {
