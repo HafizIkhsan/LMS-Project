@@ -5,3 +5,4 @@ import post from "./post.js";
 import comment from "./comment.js";
 import { forumSubMenu, materiSubMenu, tugasSubMenu } from "./content.js";
 import detail from "./file.js";
+import hamburger from "../../dashboard/sidePanelMobile.js";
