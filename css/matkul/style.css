@@ -400,4 +400,40 @@ div.background h1 {
     align-items: center;
     justify-content: center;
   }
+
+  /* Main */
+  div.background {
+    border-radius: 16px 16px 0px 0px;
+    padding: 16px;
+    height: auto;
+  }
+
+  div.background h1 {
+    font-size: 24px;
+  }
+  .container {
+    display: block;
+  }
+
+  .container:nth-of-type(2) {
+    margin-top: 0px;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 16px;
+  }
+
+  .subject {
+    height: 100%;
+  }
+
+  .subject,
+  .subject .top h1 {
+    width: 100%;
+  }
+
+  .lecture {
+    padding-bottom: 16px;
+  }
 }
