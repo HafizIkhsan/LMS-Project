@@ -816,7 +816,7 @@ td {
 
   #main-content {
     display: block;
-    padding: 16px;
+    padding: 0px;
   }
 
   .left-content {
@@ -826,4 +826,29 @@ td {
   .right-content {
     display: none;
   }
+
+  #hero {
+    padding: 16px 16px;
+    border-radius: 16px;
+  }
+
+  .subject h1 {
+    font: 600 22px Plus Jakarta Sans;
+  }
+
+  #sub-menu {
+    margin: 16px 0px 0px 0px;
+  }
+
+  #sub-menu ul li {
+    font: 600 10px Plus Jakarta Sans;
+  }
+
+  .line {
+    margin: 6px 0px 16px 0px;
+  }
+
+  /* .mid-desc{
+    font: 600 12px Plus Jakarta Sans;
+  } */
 }
