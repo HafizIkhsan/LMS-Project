@@ -442,8 +442,7 @@ div.background {
   background-position: center;
 }
 
-.comment,
-.comment-overlay {
+.comment {
   width: 100%;
   display: flex;
   align-items: center;
@@ -864,8 +863,8 @@ td {
     width: auto;
   }
 
-  .comment {
-    padding-top: 0px;
+  .btn-allComments {
+    margin-bottom: 8px;
   }
 
   .comment-input {
@@ -917,12 +916,6 @@ td {
 
   .middle-side {
     padding: 0px;
-  }
-
-  .comment-overlay img {
-    margin-right: 16px;
-    width: 32px;
-    border-radius: 24px;
   }
 
   .right-side-content {
