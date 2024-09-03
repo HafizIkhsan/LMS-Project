@@ -50,6 +50,10 @@ textarea:focus-visible {
   align-self: center;
 }
 
+.header-mobile {
+  display: none;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -694,6 +698,12 @@ td {
   height: 2px;
 }
 
+.file {
+  display: flex;
+  width: 16vw;
+  margin-top: 16px;
+}
+
 @media screen and (max-width: 600px) {
   .main {
     padding: 0px;
@@ -837,15 +847,24 @@ td {
   }
 
   #sub-menu {
-    margin: 16px 0px 0px 0px;
+    margin: 16px 0px 0px 16px;
   }
 
   #sub-menu ul li {
     font: 600 10px Plus Jakarta Sans;
+    margin-right: 16px;
   }
 
   .line {
-    margin: 6px 0px 16px 0px;
+    margin: 8px 0px 16px 0px;
+  }
+
+  .file {
+    width: auto;
+  }
+
+  .comment {
+    padding-top: 0px;
   }
 
   /* .mid-desc{
