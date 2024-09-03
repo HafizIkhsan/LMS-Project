@@ -918,7 +918,22 @@ td {
     padding: 0px;
   }
 
+  .middle-side .line {
+    margin: 8px 0px 8px 0px;
+  }
+
+  .middle-side .tenggat {
+    padding: 0px;
+    margin-bottom: 8px;
+  }
+
   .right-side-content {
+    padding-top: 4px;
+    top: 60%;
+    width: 100%;
+  }
+
+  .right-side-content .tenggat {
     display: none;
   }
 }
