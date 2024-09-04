@@ -71,3 +71,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #16369e;
 }
+
+@media screen and (max-width: 600px) {
+  #inside {
+    width: 80%;
+  }
+}
