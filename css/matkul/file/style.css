@@ -867,6 +867,24 @@ td {
     margin-bottom: 8px;
   }
 
+  .comments .comment-person {
+    height: 8vh;
+    overflow-y: scroll;
+  }
+
+  .comment-person::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .comment-person::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .comment-person::-webkit-scrollbar-thumb {
+    background: #a5a5a5;
+    border-radius: 16px;
+  }
+
   .comment-input {
     font: 400 10px Plus Jakarta Sans;
   }
@@ -877,6 +895,7 @@ td {
     height: 100%;
     border-radius: 0px;
     padding: 16px;
+    overflow: scroll;
   }
 
   .left-side {
