@@ -875,6 +875,7 @@ td {
 
   .comment-person::-webkit-scrollbar {
     height: 6px;
+    width: 4px;
   }
 
   .comment-person::-webkit-scrollbar-track {
