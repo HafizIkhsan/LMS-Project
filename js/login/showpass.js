@@ -28,7 +28,7 @@ submit.addEventListener('click', function(){
   const pass = document.querySelector('#pass');
   const text = pass.value;
   
-  if(text === 'kampus#123!'){
+  if(text === 'mahasiswa#123!'){
     form.setAttribute('action', './html/dashboard.html');
   }else{
     form.setAttribute('action', '');

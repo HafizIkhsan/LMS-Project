@@ -72,6 +72,54 @@ input[type="submit"]:hover {
   background: #16369e;
 }
 
+#info .text {
+  position: absolute;
+  top: 64vh;
+  left: 85%;
+  background: white;
+  border-radius: 16px;
+  border: 2px solid #eaeaea;
+  box-shadow: 0px 4px 4px rgb(211, 211, 211, 32%);
+  width: 20vh;
+  height: 20vh;
+  padding: 8px 16px 16px 16px;
+  display: none;
+}
+
+#info .text.in {
+  display: block;
+}
+
+.line {
+  margin: 12px 0px;
+  border-bottom: 1.5px solid #eaeaea;
+  width: 100%;
+  height: 2px;
+}
+
+#info .text p {
+  font: 600 14px Plus Jakarta Sans;
+}
+
+#info .text .name p:nth-child(1),
+#info .text .pass p:nth-child(1) {
+  font: 400 10px Plus Jakarta Sans;
+  margin: 0px;
+}
+
+#info .text .name p:nth-child(2),
+#info .text .pass p:nth-child(2) {
+  font: 600 12px Plus Jakarta Sans;
+  margin-top: 2px;
+}
+
+#info img {
+  position: absolute;
+  top: 90vh;
+  left: 95%;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   #inside {
     width: 80%;
