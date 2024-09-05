@@ -870,6 +870,7 @@ td {
   .comments .comment-person {
     height: 8vh;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .comment-person::-webkit-scrollbar {
@@ -889,7 +890,7 @@ td {
     font: 400 10px Plus Jakarta Sans;
   }
 
-  /* Overlay materi */
+  /* Overlay */
   .overlay {
     width: 100%;
     height: 100%;
@@ -913,15 +914,19 @@ td {
     padding-left: 8px;
   }
 
-  #judul {
+  #judul,
+  #judul-materi {
     font: 800 16px Plus Jakarta Sans;
   }
 
-  #nm-dosen-tugas {
+  #nm-dosen-tugas,
+  #nm-dosen-materi {
     font: 600 10px Plus Jakarta Sans;
   }
 
-  #tanggal-tugas {
+  #tanggal-tugas,
+  #tanggal-materi,
+  #pertemuan-materi {
     font: 400 10px Plus Jakarta Sans;
   }
 
