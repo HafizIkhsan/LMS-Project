@@ -124,4 +124,24 @@ input[type="submit"]:hover {
   #inside {
     width: 80%;
   }
+
+  #info img {
+    position: absolute;
+    top: 95vh;
+    left: 80%;
+    cursor: pointer;
+  }
+
+  #info .text {
+    top: 75vh;
+    left: 35%;
+  }
+
+  h1 {
+    margin-bottom: 36px;
+  }
+
+  input[type="submit"] {
+    margin-top: 16px;
+  }
 }
