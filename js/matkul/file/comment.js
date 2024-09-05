@@ -62,6 +62,8 @@ let createPost = (data, comments) => {
     </div>
   </div>
   `;
+
+  comments.lastElementChild.scrollIntoView({ behavior: "smooth" });
 };
 
 // Buat komentar pribadi
