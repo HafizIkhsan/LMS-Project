@@ -54,10 +54,10 @@ let acceptData = (text, comments) => {
 };
 
 // Buat komentar
-let createPost = (img, data, comments) => {
+let createPost = (data, comments) => {
   comments.innerHTML += `            
   <div class="comment">
-    <img src=${img} alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
+    <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
     <div class="desc">
       <div>
         <p style="color: #a5a5a5"><b style="color: black">${npm}</b> &#128900; Baru saja</p>
@@ -71,10 +71,10 @@ let createPost = (img, data, comments) => {
 };
 
 // Buat komentar pribadi
-let createPrivatePost = (img, data, comments) => {
+let createPrivatePost = (data, comments) => {
   comments.innerHTML += `            
   <div class="comment">
-    <img src=${img} alt="" style="margin-right: 8px; width: 32px; border-radius: 24px" />
+    <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="" style="margin-right: 8px; width: 32px; border-radius: 24px" />
     <div class="desc">
       <div>
         <p style="color: #a5a5a5; font:400 10px Plus Jakarta Sans"><b style="color: black">${npm}</b> &#128900; Baru saja</p>
@@ -85,4 +85,4 @@ let createPrivatePost = (img, data, comments) => {
   `;
 };
 
-export { form, submit, createPost, createPrivatePost };
+export { form, submit };
