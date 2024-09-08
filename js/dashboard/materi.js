@@ -74,25 +74,4 @@ document.addEventListener("input", (e) => {
   }
 });
 
-// submit form
-document.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  if (e.target.classList.contains("comment")) {
-    let comments = e.target.previousElementSibling;
-    let icon = e.target.lastElementChild.firstElementChild;
-    icon.setAttribute("src", "../../assets/Icon/Curved/Send.svg");
-    let button = e.target.lastElementChild;
-    button.style.cursor = "default";
-
-    let text = e.target.querySelector(".comment-input").value;
-    if (e.target.classList.contains("priv")) {
-      createPrivatePost(text, comments);
-    } else {
-      acceptData(text, comments);
-    }
-    e.target.querySelector(".comment-input").value = "";
-  }
-});
-
 export default material;
