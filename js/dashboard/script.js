@@ -10,4 +10,4 @@ import hamburger from './sidePanelMobile.js';
 
 updateCalendar();
 form( "../assets/Icon/Filled/Send-Active.svg", "../assets/Icon/Curved/Send.svg");
-submit();
+submit( '../assets/Profile-Pict/kwekkwek.jpeg');

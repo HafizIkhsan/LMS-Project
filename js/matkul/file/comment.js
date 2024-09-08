@@ -24,7 +24,7 @@ function form(active, normal) {
 }
 
 // submit form
-function submit() {
+function submit(img) {
   document.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -37,27 +37,27 @@ function submit() {
 
       let text = e.target.querySelector(".comment-input").value;
       if (e.target.classList.contains("priv")) {
-        createPrivatePost(text, comments);
+        createPrivatePost(text, comments, img);
       } else {
-        acceptData(text, comments);
+        createPost(text, comments, img);
       }
       e.target.querySelector(".comment-input").value = "";
     }
   });
 }
 
-// Nerima data
-let acceptData = (text, comments) => {
-  data["text"] = text;
-  // const formattedText = textArea.value.replace(/\n/g, "<br>");
-  createPost(data["text"], comments);
-};
+// // Nerima data
+// let acceptData = (text, comments) => {
+//   data["text"] = text;
+//   // const formattedText = textArea.value.replace(/\n/g, "<br>");
+//   createPost(data["text"], comments);
+// };
 
 // Buat komentar
-let createPost = (data, comments) => {
+let createPost = (data, comments, img) => {
   comments.innerHTML += `            
   <div class="comment">
-    <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
+    <img src="${img}" alt="" style="margin-right: 24px; width: 40px; height: 40px; border-radius: 24px" />
     <div class="desc">
       <div>
         <p style="color: #a5a5a5"><b style="color: black">${npm}</b> &#128900; Baru saja</p>
@@ -71,10 +71,10 @@ let createPost = (data, comments) => {
 };
 
 // Buat komentar pribadi
-let createPrivatePost = (data, comments) => {
+let createPrivatePost = (data, comments, img) => {
   comments.innerHTML += `            
   <div class="comment">
-    <img src="../../assets/Profile-Pict/kwekkwek.jpeg" alt="" style="margin-right: 8px; width: 32px; border-radius: 24px" />
+    <img src="${img}" alt="" style="margin-right: 8px; width: 32px; border-radius: 24px" />
     <div class="desc">
       <div>
         <p style="color: #a5a5a5; font:400 10px Plus Jakarta Sans"><b style="color: black">${npm}</b> &#128900; Baru saja</p>

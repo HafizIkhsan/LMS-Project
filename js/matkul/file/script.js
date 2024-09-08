@@ -8,4 +8,4 @@ import detail from "./file.js";
 import hamburger from "../../dashboard/sidePanelMobile.js";
 
 form("../../assets/Icon/Filled/Send-Active.svg", "../../assets/Icon/Curved/Send.svg");
-submit();
+submit("../../assets/Profile-Pict/kwekkwek.jpeg");
