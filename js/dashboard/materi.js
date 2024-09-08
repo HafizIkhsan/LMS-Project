@@ -56,4 +56,43 @@ let tanggal = (e, id) => {
   tanggalOverlay.innerHTML = tanggalCard.innerHTML;
 };
 
+// click form icon change
+document.addEventListener("input", (e) => {
+  if (e.target.classList.contains("comment-input")) {
+    let icon = e.target.nextElementSibling.firstElementChild;
+    if (e.target.value.length != 0) {
+      icon.setAttribute("src", "../assets/Icon/Filled/Send-Active.svg");
+      let button = e.target.nextElementSibling;
+      button.style.cursor = "pointer";
+      button.removeAttribute("disabled");
+    } else {
+      icon.setAttribute("src", "../assets/Icon/Curved/Send.svg");
+      let button = e.target.nextElementSibling;
+      button.style.cursor = "default";
+      button.setAttribute("disabled", "");
+    }
+  }
+});
+
+// submit form
+document.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (e.target.classList.contains("comment")) {
+    let comments = e.target.previousElementSibling;
+    let icon = e.target.lastElementChild.firstElementChild;
+    icon.setAttribute("src", "../../assets/Icon/Curved/Send.svg");
+    let button = e.target.lastElementChild;
+    button.style.cursor = "default";
+
+    let text = e.target.querySelector(".comment-input").value;
+    if (e.target.classList.contains("priv")) {
+      createPrivatePost(text, comments);
+    } else {
+      acceptData(text, comments);
+    }
+    e.target.querySelector(".comment-input").value = "";
+  }
+});
+
 export default material;

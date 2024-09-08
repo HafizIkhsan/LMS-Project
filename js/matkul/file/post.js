@@ -1,6 +1,6 @@
-import comment from "./comment.js";
+import { form, submit } from "./comment.js";
 
-const form = document.getElementById("form");
+const formPost = document.getElementById("form");
 const textArea = document.getElementById("main-input");
 const posts = document.getElementById("posts");
 const inputClick = document.querySelector(".click-expand");
@@ -11,7 +11,7 @@ let isEditing = false;
 let originalContent = "";
 
 // Form
-form.addEventListener("submit", (e) => {
+formPost.addEventListener("submit", (e) => {
   e.preventDefault();
   inputClick.style.display = "block";
   textArea.setAttribute("rows", "1");
@@ -31,7 +31,7 @@ let acceptData = () => {
 };
 
 // Enter text
-form.addEventListener("keydown", (e) => {
+formPost.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
     textArea.value += `\n`;
