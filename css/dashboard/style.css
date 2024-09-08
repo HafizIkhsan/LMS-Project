@@ -763,6 +763,11 @@ li.material:hover,
   font: 600 12px Plus Jakarta Sans;
 }
 
+textarea:focus-visible,
+input:focus-visible {
+  outline: 2px solid #0c2577;
+}
+
 .input-comment {
   display: flex;
 }

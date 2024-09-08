@@ -38,6 +38,7 @@ tugas.forEach((e) => {
 let iconColor = (x, y, z) => {
   let icon = document.getElementById("tugas-img");
   icon.style.backgroundColor = `rgb(${x},${y},${z})`;
+  icon.style.borderRadius = "8px";
 };
 
 let judul = (e, id) => {
